@@ -1,6 +1,6 @@
 {
   "name": "artinova-extension",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Artinova browser extension: add supplier products to a local selection and import it into Artinova.",
   "license": "AGPL-3.0-only",
