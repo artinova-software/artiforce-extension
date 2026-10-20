@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "product": {
+    "designation": "Lot de 2 chaises pivotantes de salle à manger, fauteuils de table JANY en velours côtelé beige",
+    "productUrl": "https://www.manomano.fr/p/lot-de-4-chaises-mia-grises-pour-salle-a-manger-8047571?model_id=10711000",
+    "supplierCode": "13209",
+    "manufacturerCode": null,
+    "gtin": "3662897112654",
+    "brand": "IDMARKET",
+    "unit": null,
+    "packagingQuantity": 2,
+    "priceCents": 9999,
+    "currency": "EUR",
+    "priceBasis": "TTC",
+    "priceBasisSource": "adapter",
+    "ecoContributionCents": null,
+    "imageUrl": "https://cdn.manomano.com/pim-media/images/medium/19f19d08f2e6387f98d260abf0987d937279bf30.jpg"
+  },
+  "adapterVersion": 1
+}

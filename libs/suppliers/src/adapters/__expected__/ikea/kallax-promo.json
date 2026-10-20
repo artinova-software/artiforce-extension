@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "product": {
+    "designation": "KALLAX Étagère, blanc, 77x147 cm",
+    "productUrl": "https://www.ikea.com/fr/fr/p/kallax-etagere-blanc-80275887/",
+    "supplierCode": "802.758.87",
+    "manufacturerCode": null,
+    "gtin": null,
+    "brand": "IKEA",
+    "unit": "u",
+    "packagingQuantity": null,
+    "priceCents": 5999,
+    "currency": "EUR",
+    "priceBasis": "TTC",
+    "priceBasisSource": "adapter",
+    "ecoContributionCents": 220,
+    "imageUrl": "https://www.ikea.com/fr/fr/images/products/kallax-etagere-blanc__0644757_pe702939_s5.jpg"
+  },
+  "adapterVersion": 1
+}

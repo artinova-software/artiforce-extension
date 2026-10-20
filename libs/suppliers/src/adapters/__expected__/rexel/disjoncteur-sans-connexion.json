@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "product": {
+    "designation": "Disjoncteur DNX³ 4500 - auto/auto - 1P+N 230V~ 16A - 4,5kA - courbe C - 1 module",
+    "productUrl": "https://www.rexel.fr/frx/Cat%C3%A9gorie/Distribution-et-gestion-de-l%27%C3%A9nergie/Distribution-et-protection-AC/Disjoncteur-modulaire-pour-logement/Disjoncteur-DNX%C2%B3-4500---auto-auto---1P%2BN-230V-16A---4%2C5kA---courbe-C---1-module/LEG406783/p/69705080",
+    "supplierCode": "LEG406783",
+    "manufacturerCode": "406783",
+    "gtin": "3245064067836",
+    "brand": "Legrand",
+    "unit": null,
+    "packagingQuantity": null,
+    "priceCents": null,
+    "currency": "EUR",
+    "priceBasis": "UNKNOWN",
+    "priceBasisSource": "none",
+    "ecoContributionCents": null,
+    "imageUrl": "https://api.rexel.fr/dam/media/content/1/69705080/10809312?format=JUMBO_WEBP"
+  },
+  "adapterVersion": 1
+}

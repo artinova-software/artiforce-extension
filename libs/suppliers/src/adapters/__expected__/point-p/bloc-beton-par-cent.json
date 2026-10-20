@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "product": {
+    "designation": "Bloc béton creux Ultibat CE classe de résistance B40 6 trous 500 x 200xh200 mm",
+    "productUrl": "https://www.pointp.fr/p/gros-oeuvre-bpe-voirie-tp/bloc-beton-creux-classe-b40-500x200x200-mm-A6271676",
+    "supplierCode": "6271676",
+    "manufacturerCode": null,
+    "gtin": "3306940884661",
+    "brand": "ULTIBAT",
+    "unit": "u",
+    "packagingQuantity": 100,
+    "priceCents": 13500,
+    "currency": "EUR",
+    "priceBasis": "TTC",
+    "priceBasisSource": "adapter",
+    "ecoContributionCents": 120,
+    "imageUrl": "https://www.pointp.fr/asset/53/59/AST2185359-L.jpg"
+  },
+  "adapterVersion": 1
+}

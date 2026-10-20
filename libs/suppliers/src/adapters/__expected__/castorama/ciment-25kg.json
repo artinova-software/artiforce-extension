@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "product": {
+    "designation": "Ciment Allcem CEM II-B-M 32,5R 25 kg",
+    "productUrl": "https://www.castorama.fr/ciment-allcem-cem-ii-b-m-32-5r-25-kg/3596700102689_CAFR.prd",
+    "supplierCode": "3596700102689",
+    "manufacturerCode": null,
+    "gtin": "3596700102689",
+    "brand": null,
+    "unit": null,
+    "packagingQuantity": null,
+    "priceCents": 719,
+    "currency": "EUR",
+    "priceBasis": "TTC",
+    "priceBasisSource": "adapter",
+    "ecoContributionCents": null,
+    "imageUrl": "https://media.castorama.fr/is/image/Castorama/ciment-allcem-cem-ii-b-m-32-5r-25-kg~3596700102689_04c_FR_CF?$MOB_PREV$&$width=1200&$height=1200"
+  },
+  "adapterVersion": 1
+}

@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "product": {
+    "designation": "Mousse polyuréthane coupe feu 2 en 1 manuelle et pistolable, aérosol de 750 ml net - CRC",
+    "productUrl": "https://www.legallais.com/produit/mousses-polyurethane-coupe-feu-2-en-1/26345/498618",
+    "supplierCode": "498618",
+    "manufacturerCode": null,
+    "gtin": null,
+    "brand": "CRC",
+    "unit": null,
+    "packagingQuantity": null,
+    "priceCents": 8530,
+    "currency": "EUR",
+    "priceBasis": "HT",
+    "priceBasisSource": "registry-default",
+    "ecoContributionCents": null,
+    "imageUrl": "https://cdn.legallais.com/pm_11812_152_152002-n2lv1notog-250.jpg"
+  },
+  "adapterVersion": 1
+}

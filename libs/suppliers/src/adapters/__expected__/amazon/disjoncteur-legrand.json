@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "product": {
+    "designation": "Legrand - Phase + Neutral circuit breaker - 10A - screw terminals - 1 module",
+    "productUrl": "https://www.amazon.fr/dp/B007AKRNYE",
+    "supplierCode": "B007AKRNYE",
+    "manufacturerCode": null,
+    "gtin": null,
+    "brand": "Legrand",
+    "unit": null,
+    "packagingQuantity": null,
+    "priceCents": 990,
+    "currency": "EUR",
+    "priceBasis": "TTC",
+    "priceBasisSource": "adapter",
+    "ecoContributionCents": null,
+    "imageUrl": "https://m.media-amazon.com/images/I/719ud9NHfRL._SL1500_.jpg"
+  },
+  "adapterVersion": 1
+}
