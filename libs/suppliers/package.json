@@ -1,0 +1,22 @@
+{
+  "name": "@artinova-software/extension-suppliers",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Supplier registry and product extraction for the Artinova browser extension.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./registry": "./src/registry/index.ts",
+    "./suppliers.json": "./src/registry/suppliers.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

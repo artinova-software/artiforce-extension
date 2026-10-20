@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "product": {
+    "designation": "Sac à gravats OCAI 70 l",
+    "productUrl": "https://www.leroymerlin.fr/produits/sac-a-gravats-ocai-70-l-66471860.html",
+    "supplierCode": "66471860",
+    "manufacturerCode": null,
+    "gtin": "3045050086274",
+    "brand": "OCAI",
+    "unit": null,
+    "packagingQuantity": null,
+    "priceCents": 399,
+    "currency": "EUR",
+    "priceBasis": "TTC",
+    "priceBasisSource": "adapter",
+    "ecoContributionCents": null,
+    "imageUrl": "https://media.adeo.com/media/3267982/media.jpg"
+  },
+  "adapterVersion": 1
+}
