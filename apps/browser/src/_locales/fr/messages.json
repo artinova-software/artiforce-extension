@@ -1,0 +1,190 @@
+{
+  "extName": {
+    "message": "Artinova, produits fournisseurs",
+    "description": "Extension name in the stores and chrome://extensions (40 characters max)."
+  },
+  "extShortName": {
+    "message": "Artinova"
+  },
+  "extDescription": {
+    "message": "Ajoutez des produits depuis les sites de vos fournisseurs et importez-les dans vos devis Artinova.",
+    "description": "Store and extension list description (132 characters max)."
+  },
+  "actionTitle": {
+    "message": "Ma sélection Artinova"
+  },
+  "buttonAdd": {
+    "message": "Ajouter à Artinova"
+  },
+  "buttonAdding": {
+    "message": "Ajout en cours…"
+  },
+  "buttonAdded": {
+    "message": "Ajouté à votre sélection"
+  },
+  "buttonUpdated": {
+    "message": "Prix mis à jour dans votre sélection"
+  },
+  "buttonFailed": {
+    "message": "Ajout impossible. Réessayez."
+  },
+  "buttonCartFull": {
+    "message": "Votre sélection est pleine (100 produits)."
+  },
+  "buttonReload": {
+    "message": "Rechargez la page pour utiliser Artinova."
+  },
+  "buttonOpenSelection": {
+    "message": "Voir ma sélection"
+  },
+  "popupSelectionTitle": {
+    "message": "Ma sélection"
+  },
+  "popupSuppliersTitle": {
+    "message": "Fournisseurs supportés"
+  },
+  "popupHelpTitle": {
+    "message": "Aide"
+  },
+  "popupBack": {
+    "message": "Retour"
+  },
+  "popupEmptyTitle": {
+    "message": "Votre sélection est vide"
+  },
+  "popupEmptyBody": {
+    "message": "Sur une fiche produit d'un fournisseur supporté, cliquez sur « Ajouter à Artinova »."
+  },
+  "popupEmptyLink": {
+    "message": "Voir les fournisseurs supportés"
+  },
+  "popupItemCountOne": {
+    "message": "1 produit"
+  },
+  "popupItemCountMany": {
+    "message": "$COUNT$ produits",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupSupplierCode": {
+    "message": "Réf. fournisseur : $CODE$",
+    "placeholders": {
+      "code": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupNotProvided": {
+    "message": "Non renseigné"
+  },
+  "popupPriceHt": {
+    "message": "$PRICE$ HT",
+    "placeholders": {
+      "price": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupPriceTtc": {
+    "message": "$PRICE$ TTC",
+    "placeholders": {
+      "price": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupPriceUnknown": {
+    "message": "$PRICE$ (HT ou TTC à confirmer)",
+    "placeholders": {
+      "price": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupPriceMissing": {
+    "message": "Prix non relevé"
+  },
+  "popupObservedOn": {
+    "message": "Prix relevé le $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupExpiresToday": {
+    "message": "Expire aujourd'hui"
+  },
+  "popupExpiresTomorrow": {
+    "message": "Expire demain"
+  },
+  "popupExpiresInDays": {
+    "message": "Expire dans $DAYS$ jours",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupRemoveItem": {
+    "message": "Retirer « $NAME$ »",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupOpenArtinova": {
+    "message": "Ouvrir Artinova"
+  },
+  "popupImportHint": {
+    "message": "Dans Artinova, cliquez sur « Importer la sélection » depuis un devis ou la Bibliothèque."
+  },
+  "popupClear": {
+    "message": "Vider la sélection"
+  },
+  "popupClearConfirm": {
+    "message": "Vider toute la sélection ?"
+  },
+  "popupClearYes": {
+    "message": "Oui, vider"
+  },
+  "popupCancel": {
+    "message": "Annuler"
+  },
+  "popupSearchSuppliers": {
+    "message": "Rechercher un fournisseur"
+  },
+  "popupSuppliersPro": {
+    "message": "Négoces professionnels"
+  },
+  "popupSuppliersRetail": {
+    "message": "Grandes surfaces et sites grand public"
+  },
+  "popupNoSupplierFound": {
+    "message": "Aucun fournisseur ne correspond à votre recherche."
+  },
+  "popupImageMissing": {
+    "message": "Pas de photo"
+  },
+  "popupHelpCenter": {
+    "message": "Centre d'aide Artinova"
+  },
+  "popupVersion": {
+    "message": "Version $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupPrivacy": {
+    "message": "Vos produits restent dans votre navigateur jusqu'à leur import dans Artinova."
+  },
+  "popupError": {
+    "message": "Une erreur est survenue. Fermez puis rouvrez la fenêtre."
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "artinovaOrigins": ["http://localhost:3000", "https://staging.artinova.fr"],
+  "artinovaAppUrl": "http://localhost:3000"
+}
