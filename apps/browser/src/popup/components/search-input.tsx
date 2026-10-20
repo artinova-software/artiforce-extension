@@ -4,7 +4,7 @@ export type SearchInputProps = { label: string; value: string; onChange(value: s
 
 export function SearchInput({ label, value, onChange }: SearchInputProps) {
   return (
-    <label className="flex items-center gap-2 rounded-control border border-line bg-white px-3 focus-within:outline-3 focus-within:outline-ring">
+    <label className="flex items-center gap-2 rounded-control border border-line bg-white px-3">
       <MagnifyingGlass size={16} weight="bold" className="text-ink-muted" aria-hidden="true" />
       <span className="sr-only">{label}</span>
       <input

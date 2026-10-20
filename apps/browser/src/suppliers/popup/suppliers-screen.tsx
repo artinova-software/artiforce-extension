@@ -3,13 +3,19 @@ import {
   foldForSearch,
   type SupplierRecord,
 } from "@artinova-software/extension-suppliers/registry";
-import { MagnifyingGlass } from "@phosphor-icons/react";
+import { ArrowSquareOut, MagnifyingGlass } from "@phosphor-icons/react";
 import { useMemo, useState } from "react";
 
 import { t } from "../../platform/i18n/t";
 import { EmptyState } from "../../popup/components/empty-state";
 import { Header } from "../../popup/components/header";
 import { SearchInput } from "../../popup/components/search-input";
+
+/** The supplier's home page (its first site, with its path prefix). */
+function siteUrl(supplier: SupplierRecord): string {
+  const site = supplier.sites[0];
+  return site === undefined ? "#" : `https://${site.host}${site.pathPrefix ?? "/"}`;
+}
 
 const SUPPLIERS = activeSuppliers({ includeTestOnly: __TARGET__ === "e2e" });
 
@@ -24,11 +30,19 @@ function SupplierGroup({ title, suppliers }: { title: string; suppliers: Supplie
       </h2>
       <ul className="divide-y divide-line bg-white">
         {suppliers.map((supplier) => (
-          <li key={supplier.id} className="flex items-baseline justify-between gap-3 px-4 py-2">
-            <span className="text-sm text-ink">{supplier.name}</span>
-            <span className="truncate text-xs text-ink-muted">
-              {supplier.sites[0]?.host.replace(/^www\./, "")}
-            </span>
+          <li key={supplier.id}>
+            <a
+              href={siteUrl(supplier)}
+              target="_blank"
+              rel="noreferrer"
+              className="group flex items-baseline justify-between gap-3 px-4 py-2 hover:bg-surface"
+            >
+              <span className="text-sm text-ink group-hover:text-primary">{supplier.name}</span>
+              <span className="flex min-w-0 items-center gap-1 text-xs text-ink-muted">
+                <span className="truncate">{supplier.sites[0]?.host.replace(/^www\./, "")}</span>
+                <ArrowSquareOut size={12} weight="bold" aria-hidden="true" className="flex-none" />
+              </span>
+            </a>
           </li>
         ))}
       </ul>
