@@ -95,7 +95,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall: the whole site is a pro area (« Me connecter »), no public product page, no sitemap."
   },
   {
     "id": "altema",
@@ -158,7 +159,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD (offer price, basis not stated); price shown only after login. Checked on /p/outillage-et-protection/lot-x-tower-echafaudage-telescopique-roulant-…-A4617077"
   },
   {
     "id": "au-forum-du-batiment",
@@ -270,7 +272,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Catalogue pages (NL) with no JSON-LD/microdata/og product, so the button cannot show; prices behind the e-shop login. Checked on /NL/documentation/J02.126.9P-ASEH-KMCG-B-Compacte-antraciet-zwarte-wandmodellen-%3C5kW/"
   },
   {
     "id": "calvez-electricite",
@@ -285,7 +288,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "JS catalogue: listings with no JSON-LD/microdata/og product, so the button cannot show; tiles do not open a product page logged out (« Identifiez-vous … pour voir les prix »); home promo priced in € HT."
   },
   {
     "id": "carnoy",
@@ -300,7 +304,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Host redirects to shop.carnoy.be (not in sites): Catbuilder frame catalogue in NL, no structured data, prices after login. Button cannot show."
   },
   {
     "id": "castorama",
@@ -350,7 +355,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "pro.ccl.fr redirects to www.ccl.fr. Product page with JSON-LD, og:type og:product; no public price (login). Checked on /fiche-caoutchouc-3pt-20a-a-sortie-droite-avec-anneau-de-suspension-13298"
   },
   {
     "id": "cdl-elec",
@@ -363,9 +369,10 @@
       }
     ],
     "imageHosts": [],
-    "defaultPriceBasis": "HT",
+    "defaultPriceBasis": "UNKNOWN",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the public TTC price (« Prix catalogue … TTC »), pro prices after login. Checked on /p/outillage-fixation-consommable/borne-a-raccordement-wago-221-…-A4870697"
   },
   {
     "id": "cebeo",
@@ -375,13 +382,14 @@
     "sites": [
       {
         "host": "www.cebeo.be",
-        "pathPrefix": "/fr-be"
+        "pathPrefix": "/catalog/fr-be/products"
       }
     ],
-    "imageHosts": [],
+    "imageHosts": ["bel-cebeo.mo.cloudinary.net"],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; no public price (login). Category pages also carry Product JSON-LD, hence the products prefix. Checked on /catalog/fr-be/products/pil-guell-2-5-231-c-i-750-gr94-1-10-7606330"
   },
   {
     "id": "cedeo",
@@ -446,7 +454,9 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "productPath": "\\.html$",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD, og:type product; prices after login. Category pages carry Product markup, hence productPath. Checked on /fr/produits-non-documentes-vtac/18900-profile-alu-encastrable-…html"
   },
   {
     "id": "clim-plus",
@@ -459,9 +469,10 @@
       }
     ],
     "imageHosts": [],
-    "defaultPriceBasis": "HT",
+    "defaultPriceBasis": "UNKNOWN",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the public TTC price (« Prix public … TTC »), pro prices after login. Checked on /p/climatisation/unite-interieure-murale-de-pompe-a-chaleur-…-A4726731"
   },
   {
     "id": "climservice",
@@ -508,7 +519,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Bot filter: home and sitemap answer « Error 403 - Forbidden » to the built-in browser. Not bypassed; no product page checked."
   },
   {
     "id": "cogeferm",
@@ -555,7 +567,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Cooperative showcase site (blog, showrooms, PDF catalogues); ordering happens on the member portal portail.covap.fr (not in sites). No product page, button cannot show."
   },
   {
     "id": "deco-clim",
@@ -602,7 +615,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with og:type product only (no JSON-LD or microdata), og:image on own host; no public price. Checked on /fr-be/produits/info/cuivre-a-souder-coude-90°-mf-28mm?qpid=10095"
   },
   {
     "id": "desenfans",
@@ -666,9 +680,10 @@
       }
     ],
     "imageHosts": [],
-    "defaultPriceBasis": "HT",
+    "defaultPriceBasis": "UNKNOWN",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the public TTC price (« Prix public … TTC »), pro prices after login. Checked on /p/panneau-decoratif/panneau-melamine-decor-…-A4955469"
   },
   {
     "id": "dispart",
@@ -681,9 +696,10 @@
       }
     ],
     "imageHosts": [],
-    "defaultPriceBasis": "HT",
+    "defaultPriceBasis": "UNKNOWN",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the public TTC price (« Prix promo … TTC »), pro prices after login. Checked on /p/outillage-et-entretien/desembouant-fort-…-A7935020"
   },
   {
     "id": "dod",
@@ -696,9 +712,10 @@
       }
     ],
     "imageHosts": [],
-    "defaultPriceBasis": "HT",
+    "defaultPriceBasis": "UNKNOWN",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the public TTC price (« Prix public (TTC) »), « Votre tarif » after login. Checked on /produit/element-pour-fixation-des-gonds-…-xpr52703.html"
   },
   {
     "id": "ebat",
@@ -713,7 +730,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "Login wall: product pages need a customer account; not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: every URL redirects to /login (« espace professionnel »), empty sitemap."
   },
   {
     "id": "eklor",
@@ -776,7 +794,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: b2b.epgc.com redirects to /en/login, no public product page."
   },
   {
     "id": "esc-grossiste",
@@ -839,7 +858,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; shows « Prix public HT » then TTC. No sitemap. Checked on /article/ODM5MDY="
   },
   {
     "id": "fluidra",
@@ -854,7 +874,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "Login wall: product pages need a customer account; not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: the home is public but every catalogue page redirects to /fr_fr/customer/account/login."
   },
   {
     "id": "fmb39",
@@ -869,7 +890,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product pages with no JSON-LD/microdata/og product, so the button cannot show; « Produit réservé aux professionnels », no public price. Checked on /moteurs-filaires-moteur-filaire-becker-…,87-102548.htm"
   },
   {
     "id": "foussier",
@@ -900,7 +922,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with microdata (price, image on own host); price shown without an HT/TTC label on this B2B site, logged out. Checked on /kit-clim"
   },
   {
     "id": "france-automatismes",
@@ -963,7 +986,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "NL webshop; product page with no JSON-LD/microdata/og product, so the button cannot show; no price logged out. Images on d2l8seq39bgs7i.cloudfront.net. Checked on /product/05011151/Clam_moederbord_voor_Sirio…html"
   },
   {
     "id": "gdv",
@@ -978,7 +1002,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "PrestaShop product page with JSON-LD, og:type product; « Connectez-vous pour consulter les prix ». Category pages: no Product markup. Checked on /interphonie-controle-d-acces-residentiel/4652-alimentation-…"
   },
   {
     "id": "gff",
@@ -1044,7 +1069,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "CGI webshop with session-encoded URLs, no sitemap; article page with no JSON-LD/microdata/og product, so the button cannot show; no price logged out (LOGIN)."
   },
   {
     "id": "highlite",
@@ -1056,10 +1082,11 @@
         "host": "www.highlite.com"
       }
     ],
-    "imageHosts": [],
+    "imageHosts": ["assets.highlite.com"],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "A « Human verification » page showed on first load and cleared by itself. Product page with microdata (name only); « R.R.P. … Hors Taxe », dealer prices after login. Checked on /fr/42533-photon-wash.html"
   },
   {
     "id": "hitmusic",
@@ -1137,9 +1164,10 @@
       }
     ],
     "imageHosts": [],
-    "defaultPriceBasis": "HT",
+    "defaultPriceBasis": "UNKNOWN",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD listing every variant, the first one is not the displayed variant; logged-out price TTC. Checked on /accessoires-et-consommables/…/vitrificateur-parquet-environnement-blanchon-satine-5l"
   },
   {
     "id": "krannich",
@@ -1170,7 +1198,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "JS catalogue; product page with no JSON-LD/microdata/og product, so the button cannot show; prices after login (card number). Checked on /catalogue/produit/3106/panneau-de-construction-l.250-x-l.-60-cm-…"
   },
   {
     "id": "lalliard",
@@ -1183,9 +1212,10 @@
       }
     ],
     "imageHosts": [],
-    "defaultPriceBasis": "HT",
+    "defaultPriceBasis": "UNKNOWN",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; public price TTC, accounts for pros and individuals. Checked on /produit/libre-service/…/navykit-kit-de-pose-preparateur-navylam-xrp4481-xpr5821.html"
   },
   {
     "id": "lapeyre",
@@ -1216,7 +1246,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "Login wall: product pages need a customer account; not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: eshop.lariviere.fr/s/ redirects to /s/login (« Connectez-vous à votre espace client »)."
   },
   {
     "id": "le-froid-pecomark",
@@ -1231,7 +1262,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; public price « … € HT / Pièce ». Checked on /fr/c/p/101159"
   },
   {
     "id": "ledkia",
@@ -1240,13 +1272,16 @@
     "segment": "retail",
     "sites": [
       {
-        "host": "www.ledkia.com"
+        "host": "www.ledkia.com",
+        "pathPrefix": "/fr"
       }
     ],
     "imageHosts": [],
     "defaultPriceBasis": "TTC",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "productPath": "\\.html$",
+    "checkedAt": "2026-10-20",
+    "notes": "Host serves every country, hence /fr. Product page with JSON-LD, price TTC (« TVA incl. »). Category pages carry Product JSON-LD, hence productPath. Checked on /fr/acheter-reglettes-led-etanches/1165-…html"
   },
   {
     "id": "legallais",
@@ -1294,7 +1329,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD, og:type product, images on own host; logged out the JSON-LD price is a 0.00 placeholder, prices need a partner login. Checked on /fr/hvac/equipement-hvac-r/…-hvt-8182-000"
   },
   {
     "id": "lmc-store",
@@ -1310,7 +1346,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD and microdata, images on own host; prices after login (« Prix(HT) »). The /fr prefix also matches /fr_be. Checked on /fr/produit-de-nettoyage.html"
   },
   {
     "id": "maison-etanche",
@@ -1412,16 +1449,17 @@
     "id": "mybleurouge",
     "name": "MyBleuRouge",
     "country": "FR",
-    "segment": "retail",
+    "segment": "pro",
     "sites": [
       {
         "host": "www.mybleurouge.fr"
       }
     ],
     "imageHosts": [],
-    "defaultPriceBasis": "TTC",
+    "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Ordering site for professionals; product page with no JSON-LD/microdata/og product, so the button cannot show; prices « … € HT » (« Prix public »). Checked on /fDS002350/THERMOSTAT-DIGITAL-DOMOCABLE"
   },
   {
     "id": "oeg",
@@ -1468,7 +1506,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "OroCommerce product page with no JSON-LD/microdata/og product, so the button cannot show; « Prix HT » column empty until login. Checked on /unite-exterieure-gmv6-heat-recovery-tourelle"
   },
   {
     "id": "partedis",
@@ -1483,7 +1522,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "WordPress showcase site (posts, branches, suppliers, PDF catalogues); no product page or shop in the sitemap. Button cannot show."
   },
   {
     "id": "pieces-xpress",
@@ -1498,7 +1538,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "TTC",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the TTC price (HT shown too), pro prices after login. Checked on /article-405280-527242-capteur-de-temperature-pour-ceti-monoval-…htm"
   },
   {
     "id": "pilotefilms",
@@ -1513,7 +1554,9 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "productPath": "^/[^/]+/\\d+-[^/]+\\.html$",
+    "checkedAt": "2026-10-20",
+    "notes": "PrestaShop product page with microdata, og:type product; no price logged out. Category pages carry Product microdata, hence productPath. Checked on /unites-traitement-modulaires-ST2110/5136-…html"
   },
   {
     "id": "point-p",
@@ -1548,7 +1591,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "TTC",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "www.porcelanosa.com/fr redirects to store.porcelanosa.com/fr. Product page with no JSON-LD/microdata/og product, so the button cannot show; consumer price without HT/TTC label. Checked on /fr/p-404-black"
   },
   {
     "id": "ppc-pieces-detachees",
@@ -1582,7 +1626,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "WooCommerce: logged out, category and product URLs redirect to the home page (SSO login); empty sitemap. No public product page."
   },
   {
     "id": "prolians",
@@ -1629,7 +1674,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Réunion store; product page with no JSON-LD/microdata/og product, so the button cannot show; shows HT then TTC (DOM VAT). Checked on /fiche/bouton-chene-naturel-vernis-d44mm-piece-47828"
   },
   {
     "id": "quincaillerie-aixoise",
@@ -1642,9 +1688,10 @@
       }
     ],
     "imageHosts": [],
-    "defaultPriceBasis": "TTC",
+    "defaultPriceBasis": "UNKNOWN",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "JS webcatalogue; product page with no JSON-LD/microdata/og product, so the button cannot show; « Connectez-vous pour voir les prix », basis unknown. Checked on /catalogue/P00/P00.050/P00.050.040/55105"
   },
   {
     "id": "resistex",
@@ -1656,10 +1703,11 @@
         "host": "www.resistex-sa.com"
       }
     ],
-    "imageHosts": [],
+    "imageHosts": ["api.resistex-sa.com"],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Range page with JSON-LD (no offer price), og:type product, image on api.resistex-sa.com; « Connectez-vous pour voir vos prix nets ». Checked on /gamme/aurea"
   },
   {
     "id": "reuter",
@@ -1668,13 +1716,16 @@
     "segment": "retail",
     "sites": [
       {
-        "host": "www.reuter.com"
+        "host": "www.reuter.com",
+        "pathPrefix": "/fr-fr"
       }
     ],
-    "imageHosts": [],
+    "imageHosts": ["img.reuter.com"],
     "defaultPriceBasis": "TTC",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "productPath": "^/fr-fr/p/",
+    "checkedAt": "2026-10-20",
+    "notes": "Host serves every country, hence /fr-fr. Product page with JSON-LD price, TTC (France, 20 % TVA). Category pages carry Product JSON-LD, hence productPath. Checked on /fr-fr/p/bianemo-huatau-…/1241549"
   },
   {
     "id": "rexel",
@@ -1705,7 +1756,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD (offer without price), images on own host; no price shown logged out. Checked on /tous-les-produits/climatisation-ventilation/vmc/vmc-individuelle/control-zehnder-…-655011100"
   },
   {
     "id": "robinetterie-hammel",
@@ -1736,7 +1788,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Salesforce B2B store; product page with no JSON-LD/microdata/og product, so the button cannot show; public price « € … HT / unité ». Checked on /s/product/truelle-langue-de-chat-…/01t7Q000005U0OdQAK"
   },
   {
     "id": "rouchy",
@@ -1751,7 +1804,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; « Prix net HT » and « Prix public HT » shown. Checked on /produit/33738/Resine-a-base-de-silicate-urethane-EPORIP-SCR"
   },
   {
     "id": "screwfix",
@@ -1812,9 +1866,10 @@
       }
     ],
     "imageHosts": [],
-    "defaultPriceBasis": "HT",
+    "defaultPriceBasis": "UNKNOWN",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is a TTC price (« Prix professionnel … TTC »), account prices after login. Checked on /p/isolation/panneau-isolant-composite-…-A4070925"
   },
   {
     "id": "sider",
@@ -1826,10 +1881,11 @@
         "host": "www.sider.biz"
       }
     ],
-    "imageHosts": [],
+    "imageHosts": ["media.sider.biz"],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD price (basis not stated) while the page shows « Public HT 0,00 € », prices after login. Checked on /produit/article-116210"
   },
   {
     "id": "silamp",
@@ -1857,10 +1913,11 @@
         "host": "www.sidv.fr"
       }
     ],
-    "imageHosts": [],
+    "imageHosts": ["cdn.sisca.fr"],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "SPA: product page with JSON-LD injected client-side; JSON-LD price is the public HT price (« PPI HT »). Many sitemap product URLs 404. Checked on /produits/FA6DA98A-D147-4E19-A435-78423DC18BDC"
   },
   {
     "id": "smartsd",
@@ -1875,7 +1932,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "English-only site (the /fr product URL is a 404); product page with no JSON-LD/microdata/og product, so the button cannot show; « Login for price info ». Checked on /en/product/10600291/2n-9138511"
   },
   {
     "id": "solmur",
@@ -1901,13 +1959,14 @@
     "sites": [
       {
         "host": "www.sonepar.fr",
-        "pathPrefix": "/fr-fr"
+        "pathPrefix": "/catalog/fr-fr/products"
       }
     ],
-    "imageHosts": [],
+    "imageHosts": ["fra-connect.mo.cloudinary.net"],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; no public price (login). Category pages also carry Product JSON-LD, hence the products prefix. Checked on /catalog/fr-fr/products/sick-capteurs-…-00067425250"
   },
   {
     "id": "sonepar-climate",
@@ -1922,7 +1981,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Magento product page with microdata, og:type product, og:image on own host; no price rendered logged out (« Accédez à vos prix personnalisés »). Checked on /support-mural-supanv200bxl-…"
   },
   {
     "id": "sorofi",
@@ -1953,7 +2013,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; « Prix nets hors TVA », « Enregistrez-vous pour consulter nos prix ». Checked on /fr/fr/Installation/…/Mastic-d-étanchéité-pour-parquets-422-sid262621.html"
   },
   {
     "id": "tecnomat",
@@ -1965,10 +2026,12 @@
         "host": "www.tecnomat.fr"
       }
     ],
-    "imageHosts": [],
+    "imageHosts": ["media.adeo.com"],
     "defaultPriceBasis": "TTC",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "productPath": "^/produits/",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the TTC price (HT shown too). Brand pages carry Product markup, hence productPath. Checked on /produits/colonne-de-douche-…-25137570.html"
   },
   {
     "id": "tereva",
@@ -2044,10 +2107,11 @@
         "host": "www.vanmarcke.com"
       }
     ],
-    "imageHosts": [],
+    "imageHosts": ["media.vanmarcke.com", "s3.vanmarcke.com"],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD (offer without price), og:type product; no price logged out. Checked on /fr/salle-de-bains/produits/robinets/robinet-de-lavabo/hansgrohe-metropol-mitigeur-…"
   },
   {
     "id": "viessmann",
@@ -2094,22 +2158,24 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "SPA; product page with no JSON-LD/microdata/og product, so the button cannot show; « Consulter le prix » after login. Images on d1x12lhh8s9nlj.cloudfront.net. Checked on /fr/produits/…/cameras-1081/uv-uac-b115-f28-detail"
   },
   {
     "id": "vivre-en-bois",
     "name": "Vivre en Bois",
     "country": "FR",
-    "segment": "retail",
+    "segment": "pro",
     "sites": [
       {
         "host": "www.vivreenbois.com"
       }
     ],
     "imageHosts": [],
-    "defaultPriceBasis": "TTC",
+    "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "« Vivre en Bois Pro »; product page with no JSON-LD/microdata/og product, so the button cannot show; « Tarif public … € HT ». Checked on /produit/panneau-clt-bois-hexakit-…"
   },
   {
     "id": "vst",
@@ -2124,7 +2190,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "Login wall: product pages need a customer account; not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: redirects to /pa10/page-d-authentification (« Vente réservée aux professionnels »)."
   },
   {
     "id": "wallgreenbox",
@@ -2155,7 +2222,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "Login wall: product pages need a customer account; not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: moncomptepro.wendel.fr redirects to /forms/identification.aspx."
   },
   {
     "id": "westcoast-france",
@@ -2170,7 +2238,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "Site unreachable from the probe (timeout); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Host resolves but ports 80 and 443 time out (2026-10-19 and 2026-10-20); domain registration active. Not disabled: may be IP filtering, check from another network."
   },
   {
     "id": "wurth",
@@ -2182,10 +2251,11 @@
         "host": "eshop.wurth.fr"
       }
     ],
-    "imageHosts": [],
+    "imageHosts": ["media.witglobal.net"],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Intershop product page with JSON-LD (offer without price), image on media.witglobal.net; « Prix affichés aux clients après connexion ». Checked on /Creme-lavante-CREME-LAVANTE-5L/0893934.sku/fr/FR/EUR/"
   },
   {
     "id": "yesss-electrique",
@@ -2200,7 +2270,8 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; catalogue only, no price logged out. Checked on /fiche/schneider-electric-s520445-odace-prise-tv-simple-blanche-…"
   },
   {
     "id": "zolpan",
@@ -2215,6 +2286,7 @@
     "imageHosts": [],
     "defaultPriceBasis": "HT",
     "support": "generic",
-    "notes": "No product page found automatically (JavaScript catalogue or search); not verified on a product page yet."
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with microdata (name, brand, image on own host); no price (catalogue). Category pages: no Product markup. Checked on /catalogue-produits/…/primaire-fond-absorbant-uzin-pe-375"
   }
 ]
