@@ -35,6 +35,7 @@ export default defineConfig({
           __APP_CONFIG__: JSON.stringify({
             artinovaOrigins: ["https://app.artinova.test", "http://localhost:3000"],
             artinovaAppUrl: "https://app.artinova.test",
+            selectionPath: "/stock?selection=extension",
             helpUrl: "https://artinova.fr/aide",
           }),
         },

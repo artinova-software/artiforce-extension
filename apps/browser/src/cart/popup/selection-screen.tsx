@@ -2,7 +2,7 @@ import { ArrowSquareOut, ShoppingCartSimple } from "@phosphor-icons/react";
 import { useState } from "react";
 
 import { BrowserApi } from "../../platform/browser/browser-api";
-import { loadAppConfig } from "../../platform/config/app-config";
+import { loadAppConfig, selectionUrl } from "../../platform/config/app-config";
 import { t } from "../../platform/i18n/t";
 import { sendCommand } from "../../platform/messaging/message-sender";
 import { Button } from "../../popup/components/button";
@@ -64,7 +64,7 @@ export function SelectionScreen() {
         </ul>
       )}
       <footer className="flex flex-col gap-3 border-t border-line bg-surface px-4 py-3">
-        <Button onClick={() => void BrowserApi.createTab(loadAppConfig().artinovaAppUrl)}>
+        <Button onClick={() => void BrowserApi.createTab(selectionUrl(loadAppConfig()))}>
           <ArrowSquareOut size={16} weight="bold" aria-hidden="true" />
           {t("popupOpenArtinova")}
         </Button>

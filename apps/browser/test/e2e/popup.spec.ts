@@ -28,6 +28,14 @@ test.describe("popup", () => {
     await expect(row).toContainText("Expire dans 7 jours");
     await popup.screenshot({ path: "test-results/popup-selection.png" });
 
+    // « Ouvrir ma sélection dans Artinova » lands on the Stock page with the selection.
+    const [stock] = await Promise.all([
+      context.waitForEvent("page"),
+      popup.getByRole("button", { name: "Ouvrir ma sélection dans Artinova" }).click(),
+    ]);
+    await expect(stock).toHaveURL("https://app.artinova.test/stock?selection=extension");
+    await stock.close();
+
     await popup
       .getByRole("button", { name: "Retirer « Perceuse visseuse sans fil 18 V »" })
       .click();
@@ -50,7 +58,9 @@ test.describe("popup", () => {
     await popup.goto(`chrome-extension://${extensionId}/popup/index.html#/suppliers`);
     await expect(popup.getByRole("heading", { name: "Fournisseurs supportés" })).toBeVisible();
     await popup.getByRole("searchbox").fill("LEROY merlin");
-    await expect(popup.getByText("Leroy Merlin", { exact: true })).toBeVisible();
+    const link = popup.getByRole("link", { name: /Leroy Merlin/ });
+    await expect(link).toHaveAttribute("href", "https://www.leroymerlin.fr/");
+    await expect(link).toHaveAttribute("target", "_blank");
     await popup.getByRole("searchbox").fill("zzzz");
     await expect(
       popup.getByText("Aucun fournisseur ne correspond à votre recherche."),

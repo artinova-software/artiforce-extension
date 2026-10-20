@@ -24,9 +24,9 @@ facing texts are French; reviewer notes are English.
 > 2. Le produit rejoint votre sélection : désignation, référence, photo, prix
 >    relevé et date du relevé. L'icône de l'extension affiche le nombre de
 >    produits.
-> 3. Dans Artinova, cliquez sur « Importer la sélection » depuis un devis ou
->    la Bibliothèque. Vous vérifiez les produits, les prix HT ou TTC et vos
->    marges avant l'import.
+> 3. Ouvrez votre sélection dans Artinova (page Stock) : ajoutez les produits
+>    à un devis ou à la Bibliothèque, triez-les ou supprimez-les. Vous
+>    vérifiez les prix HT ou TTC et vos marges avant l'import.
 >
 > Vos produits restent dans votre navigateur jusqu'à leur import dans
 > Artinova. Ils expirent au bout de 7 jours. L'extension ne collecte aucune

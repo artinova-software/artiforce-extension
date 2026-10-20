@@ -133,6 +133,7 @@ describe("app config", () => {
         {
           artinovaOrigins: ["http://localhost:3000"],
           artinovaAppUrl: "http://localhost:3000",
+          selectionPath: "/stock?selection=extension",
           helpUrl: "https://a.fr",
         },
         "production",

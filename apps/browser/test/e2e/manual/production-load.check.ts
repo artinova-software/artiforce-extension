@@ -41,6 +41,8 @@ test("production build loads cleanly", async () => {
   await expect(popup.getByRole("heading", { name: "Votre sélection est vide" })).toBeVisible();
   await popup.goto(`chrome-extension://${id}/popup/index.html#/suppliers`);
   await expect(popup.getByRole("heading", { name: /Négoces professionnels/ })).toBeVisible();
+  await popup.getByRole("searchbox").focus();
+  await popup.getByRole("link", { name: /Acadia/ }).hover();
   await popup.screenshot({ path: "test-results/production-popup-suppliers.png" });
   test.info().annotations.push({ type: "state", description: JSON.stringify(state) });
   test.info().annotations.push({ type: "errors", description: JSON.stringify(errors) });

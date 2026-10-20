@@ -12,6 +12,15 @@ that folder into its code (no npm package) with a header naming the commit:
 // Copied from artinova-software/artinova-extension@<sha> libs/bridge/src. Do not edit here.
 ```
 
+## Entry point in the web app
+
+« Ouvrir ma sélection dans Artinova » in the popup opens
+`<app>/stock?selection=extension` (`selectionPath` in
+`apps/browser/config/base.json`). The web app shows the selection there: add
+items to a quote or to the Library, sort them, delete them. Deleting from the
+web app goes through `removeItems`; deleting from the popup reaches the web
+app as `cart.changed`. Both sides stay in sync without polling.
+
 ## Transport
 
 ```

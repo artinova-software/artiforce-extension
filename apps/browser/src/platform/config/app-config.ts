@@ -9,9 +9,16 @@ export const appConfigSchema = z.strictObject({
   artinovaOrigins: z.array(originSchema).min(1),
   /** Opened by « Ouvrir Artinova ». */
   artinovaAppUrl: z.url(),
+  /** Where the web app shows the extension selection (add, sort, delete), relative to the app URL. */
+  selectionPath: z.string().regex(/^\/[^/]/),
   helpUrl: z.url(),
 });
 export type AppConfig = z.infer<typeof appConfigSchema>;
+
+/** « Ouvrir Artinova »: the Stock page of the web app, with the selection panel open. */
+export function selectionUrl(config: AppConfig): string {
+  return new URL(config.selectionPath, config.artinovaAppUrl).href;
+}
 
 /** The build-time config (DefinePlugin), validated at startup. */
 export function loadAppConfig(raw: unknown = __APP_CONFIG__): AppConfig {

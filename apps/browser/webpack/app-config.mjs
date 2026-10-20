@@ -29,6 +29,9 @@ export function validateAppConfig(config, target) {
       errors.push(`${key} must be an absolute URL`);
     }
   }
+  if (typeof config.selectionPath !== "string" || !/^\/[^/]/.test(config.selectionPath)) {
+    errors.push("selectionPath must be a path on the web app, e.g. /stock?selection=extension");
+  }
   if (target === "production") {
     const all = [...(config.artinovaOrigins ?? []), config.artinovaAppUrl];
     for (const value of all) {
