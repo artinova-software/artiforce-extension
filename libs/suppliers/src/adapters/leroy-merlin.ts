@@ -12,7 +12,7 @@ const BUY_BOX = ".js-buy-box";
  */
 export const leroyMerlinAdapter: SupplierAdapter = {
   supplierId: "leroy-merlin",
-  version: 1,
+  version: 2,
 
   isProductPage(page) {
     return (
@@ -33,12 +33,17 @@ export const leroyMerlinAdapter: SupplierAdapter = {
   refine(page) {
     const document = page.document;
     const box = document.querySelector(BUY_BOX) ?? document;
-    const priceLine = textOf(box, "[data-cerberus='ELEM_PRIX'], .m-price__line");
-    const unitText = textOf(box, ".m-price__unit") ?? "";
-    const accessible = textOf(box, ".m-price .kl-hidden-accessibility") ?? "";
+    // During a promotion the struck former price (« -crossed », CROSSED_PRICE)
+    // comes first in the DOM: read the main price only.
+    const priceLine =
+      textOf(box, ".m-price.-main [data-cerberus='ELEM_PRIX']") ??
+      textOf(box, ".m-price:not(.-crossed) .m-price__line");
+    const unitText = textOf(box, ".m-price:not(.-crossed) .m-price__unit") ?? "";
+    const accessible = textOf(box, ".m-price:not(.-crossed) .kl-hidden-accessibility") ?? "";
     const price = priceLine === null ? null : parsePriceText(priceLine);
     const designation = textOf(document, "h1#product-name, h1");
-    const ecoText = textOf(box, "[class*='eco' i], [class*='ecopart' i]");
+    const ecoText =
+      textOf(box, "[data-feature-name='ecopart']") ?? textOf(box, "[class*='ecopart' i]");
     const eco = ecoText === null ? null : parsePriceText(ecoText);
     const reference = box.querySelector("input[name='reflm']")?.getAttribute("value") ?? null;
     return {
