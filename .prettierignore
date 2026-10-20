@@ -1,0 +1,9 @@
+node_modules
+dist
+build
+coverage
+test-results
+playwright-report
+pnpm-lock.yaml
+# Captured supplier pages: kept as trimmed by scripts/trim-fixture.mjs.
+libs/suppliers/fixtures/**/*.html
