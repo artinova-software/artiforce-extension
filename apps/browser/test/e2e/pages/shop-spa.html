@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Boutique SPA</title>
+  </head>
+  <body>
+    <div id="app"><h1>Catalogue</h1></div>
+    <script>
+      // Client-side navigation to a product, as single-page shops do.
+      window.openProduct = () => {
+        history.pushState({}, "", "/produits/spa-niveau-laser");
+        const ld = document.createElement("script");
+        ld.type = "application/ld+json";
+        ld.textContent = JSON.stringify({
+          "@type": "Product",
+          name: "Niveau laser croix",
+          sku: "NL-1",
+          offers: { price: "59.00", priceCurrency: "EUR" },
+        });
+        document.head.append(ld);
+        document.getElementById("app").innerHTML =
+          '<h1>Niveau laser croix</h1><button id="add-to-cart">Ajouter au panier</button>';
+      };
+    </script>
+  </body>
+</html>

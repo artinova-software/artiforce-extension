@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "product": {
+    "designation": "Filtre magnétique MAGMAX SOLUTECH 1\" spécial PAC/chaudières débit 6 m³/h",
+    "productUrl": "https://www.cedeo.fr/p/droguerie-et-fixations/filtre-magnetique-magmax-solutech-1%22-special-pac-chaudieres-debit-6-m%C2%B3-h-ref-125688578-A4988574",
+    "supplierCode": "4988574",
+    "manufacturerCode": "125688578",
+    "gtin": "3660965018136",
+    "brand": "BWT",
+    "unit": "u",
+    "packagingQuantity": null,
+    "priceCents": 23452,
+    "currency": "EUR",
+    "priceBasis": "TTC",
+    "priceBasisSource": "adapter",
+    "ecoContributionCents": null,
+    "imageUrl": "https://www.cedeo.fr/asset/42/02/AST18784202-L.jpg"
+  },
+  "adapterVersion": 1
+}

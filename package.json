@@ -1,0 +1,48 @@
+{
+  "name": "artinova-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Artinova browser extension: add supplier products to a local selection and import it into Artinova.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "packageManager": "pnpm@12.9.1",
+  "engines": {
+    "node": "^24.20.0",
+    "pnpm": "^12.9.1"
+  },
+  "scripts": {
+    "check": "pnpm run format:check && pnpm run lint && pnpm run typecheck && pnpm run test",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint": "eslint .",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "vitest run",
+    "test:e2e": "pnpm --filter @artinova-software/browser-extension run test:e2e",
+    "dev:chrome": "pnpm --filter @artinova-software/browser-extension run dev:chrome",
+    "build:chrome": "pnpm --filter @artinova-software/browser-extension run build:chrome",
+    "build:edge": "pnpm --filter @artinova-software/browser-extension run build:edge",
+    "build:firefox": "pnpm --filter @artinova-software/browser-extension run build:firefox",
+    "dist": "pnpm --filter @artinova-software/browser-extension run dist",
+    "supplier:new": "node scripts/new-supplier.mjs",
+    "fixture:trim": "node scripts/trim-fixture.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/jsdom": "30.0.0",
+    "@types/node": "24.13.3",
+    "eslint": "10.12.0",
+    "eslint-import-resolver-typescript": "4.4.5",
+    "eslint-plugin-check-file": "3.3.2",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-unused-imports": "4.4.1",
+    "globals": "17.13.0",
+    "jsdom": "30.1.3",
+    "prettier": "3.9.10",
+    "prettier-plugin-tailwindcss": "0.8.1",
+    "typescript": "npm:@typescript/typescript6@6.0.2",
+    "typescript-eslint": "8.71.2",
+    "vitest": "5.0.4"
+  }
+}

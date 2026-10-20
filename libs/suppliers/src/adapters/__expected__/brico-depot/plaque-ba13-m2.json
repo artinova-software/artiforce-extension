@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "product": {
+    "designation": "Plaque de plâtre BA13 NF bords amincis standard - 2,5 X 1,2M",
+    "productUrl": "https://www.bricodepot.fr/p/3334160295318/plaque-de-platre-ba13-nf-bords-amincis-standard-2-5-x-1-2m",
+    "supplierCode": "3334160295318",
+    "manufacturerCode": null,
+    "gtin": "3334160295318",
+    "brand": null,
+    "unit": "u",
+    "packagingQuantity": null,
+    "priceCents": 735,
+    "currency": "EUR",
+    "priceBasis": "TTC",
+    "priceBasisSource": "adapter",
+    "ecoContributionCents": null,
+    "imageUrl": "https://media.bricodepot.fr/is/image/KingfisherDigital/3334160295318_01c_FR_BF"
+  },
+  "adapterVersion": 1
+}

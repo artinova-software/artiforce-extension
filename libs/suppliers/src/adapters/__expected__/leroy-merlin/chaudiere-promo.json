@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "product": {
+    "designation": "Chaudière gaz murale condensation Oxylis (ex-Mégalis) GVA IC 24-30 GVA C Elm Leblanc",
+    "productUrl": "https://www.leroymerlin.fr/produits/chaudiere-gaz-murale-condensation-oxylis-ex-megalis-gva-ic-24-30-gva-c-elm-leblanc-90200704.html",
+    "supplierCode": "90200704",
+    "manufacturerCode": null,
+    "gtin": "3701621706940",
+    "brand": "ELM LEBLANC",
+    "unit": null,
+    "packagingQuantity": null,
+    "priceCents": 119900,
+    "currency": "EUR",
+    "priceBasis": "TTC",
+    "priceBasisSource": "adapter",
+    "ecoContributionCents": 600,
+    "imageUrl": "https://media.adeo.com/mkp/640651904d8614f74ed88af24eb2db7f/media.png"
+  },
+  "adapterVersion": 2
+}

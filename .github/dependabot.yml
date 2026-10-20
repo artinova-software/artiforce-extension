@@ -1,0 +1,21 @@
+# Every action in .github is pinned to a full commit SHA with its version in a
+# trailing comment. This entry keeps those pins current in one grouped pull
+# request a week. npm dependencies are upgraded by hand, aligned with the
+# Artinova monorepo.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directories:
+      - /
+      - /.github/actions/*
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/Paris
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: ci

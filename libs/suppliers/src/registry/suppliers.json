@@ -1,0 +1,2292 @@
+[
+  {
+    "id": "123-elec",
+    "name": "123 elec",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.123elec.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with og:type product; no public price. Checked on /domotique-maison-connectee/bornes-et-prises-de-recharge-pou"
+  },
+  {
+    "id": "4roll",
+    "name": "4Roll",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.4roll.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; no public price (login for pro prices). Checked on /fr_FR/products/2091-moteur-de-volet-roulant-radio-somfy-rs1"
+  },
+  {
+    "id": "acadia",
+    "name": "Acadia",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.acadia-info.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; no public price. Checked on /memoires-pc/27550-kingston-64g-232g-d5-6000mhz-fury-beast-w"
+  },
+  {
+    "id": "aircco",
+    "name": "Aircco",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.aircco.fr"
+      },
+      {
+        "host": "aircco.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown (login for pro prices). Checked on /products/ensemble-groupe-exterieur-ecodan-power-inverter-pu"
+  },
+  {
+    "id": "aldes",
+    "name": "Aldes",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "storeonline.aldes.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /filtres/210-lot-de-2-filtres-pour-dee-fly-modulo-auto-ou-hy"
+  },
+  {
+    "id": "algam",
+    "name": "Algam",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.algam.net"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall: the whole site is a pro area (« Me connecter »), no public product page, no sitemap."
+  },
+  {
+    "id": "altema",
+    "name": "Altema",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "acces-pro.altema.pro"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with microdata, og:type product; no public price. Checked on /conduit-pla-100-sortie-de-toit-verticales/40295-pla-chapeau"
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.amazon.fr"
+      }
+    ],
+    "imageHosts": ["m.media-amazon.com"],
+    "defaultPriceBasis": "TTC",
+    "support": "verified",
+    "checkedAt": "2026-10-19",
+    "notes": "Adapter (no structured data on the page). Fixture: disjoncteur-legrand."
+  },
+  {
+    "id": "artinova-test-shop",
+    "name": "Boutique de test",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "shop.artinova.test"
+      }
+    ],
+    "imageHosts": ["img.artinova.test"],
+    "defaultPriceBasis": "TTC",
+    "support": "verified",
+    "productPath": "^/produits/",
+    "testOnly": true
+  },
+  {
+    "id": "asturienne",
+    "name": "Asturienne",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.asturienne.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD (offer price, basis not stated); price shown only after login. Checked on /p/outillage-et-protection/lot-x-tower-echafaudage-telescopique-roulant-…-A4617077"
+  },
+  {
+    "id": "au-forum-du-batiment",
+    "name": "Au Forum du Bâtiment",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.afdb.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, microdata, og:type product; no public price (login for pro prices). Checked on /heracles-1803s0555-serrure-5-points-y8c-hsh-sesame-2-50-cyl"
+  },
+  {
+    "id": "avs-store",
+    "name": "AVS Store",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.allo-volet-service-store.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "disabled",
+    "checkedAt": "2026-10-19",
+    "notes": "Redirects to www.4roll.fr (supplier 4roll)."
+  },
+  {
+    "id": "barcelona-led",
+    "name": "Barcelona Led",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.barcelonaled.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /lampes-et-appliques/applique-murale/applique-murale-exterie"
+  },
+  {
+    "id": "brico-depot",
+    "name": "Brico Dépôt",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.bricodepot.fr"
+      }
+    ],
+    "imageHosts": ["media.bricodepot.fr"],
+    "defaultPriceBasis": "TTC",
+    "support": "verified",
+    "checkedAt": "2026-10-19",
+    "notes": "Adapter. Fixture: plaque-ba13-m2 (price per m² and per piece)."
+  },
+  {
+    "id": "by-demes",
+    "name": "By Demes",
+    "country": "EU",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "bydemes.com",
+        "pathPrefix": "/fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; no public price. Checked on /fr/produits/controle-dacces/vehiculesascenseurs/barrieres-a"
+  },
+  {
+    "id": "byled",
+    "name": "Byled",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.byled.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /applique-led-exterieure-a-detecteur-de-mouvement-avec-ampou"
+  },
+  {
+    "id": "cairox",
+    "name": "Cairox",
+    "country": "BE",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.cairox.be"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Catalogue pages (NL) with no JSON-LD/microdata/og product, so the button cannot show; prices behind the e-shop login. Checked on /NL/documentation/J02.126.9P-ASEH-KMCG-B-Compacte-antraciet-zwarte-wandmodellen-%3C5kW/"
+  },
+  {
+    "id": "calvez-electricite",
+    "name": "Calvez Électricité",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.calvez-electricite.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "JS catalogue: listings with no JSON-LD/microdata/og product, so the button cannot show; tiles do not open a product page logged out (« Identifiez-vous … pour voir les prix »); home promo priced in € HT."
+  },
+  {
+    "id": "carnoy",
+    "name": "Carnoy",
+    "country": "BE",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "carnoy.catbuilder.info"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Host redirects to shop.carnoy.be (not in sites): Catbuilder frame catalogue in NL, no structured data, prices after login. Button cannot show."
+  },
+  {
+    "id": "castorama",
+    "name": "Castorama",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.castorama.fr"
+      }
+    ],
+    "imageHosts": ["media.castorama.fr"],
+    "defaultPriceBasis": "TTC",
+    "support": "verified",
+    "checkedAt": "2026-10-19",
+    "notes": "Adapter. Fixture: ciment-25kg."
+  },
+  {
+    "id": "catry-bayart",
+    "name": "Catry Bayart",
+    "country": "BE",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.catrybayart.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with og:type product; no public price (login for pro prices). Checked on /disjoncteur-phase-neutre-dnx-4500-6ka-borne-a-vis-courbe-c."
+  },
+  {
+    "id": "ccl",
+    "name": "CCL",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "pro.ccl.fr"
+      },
+      {
+        "host": "www.ccl.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "pro.ccl.fr redirects to www.ccl.fr. Product page with JSON-LD, og:type og:product; no public price (login). Checked on /fiche-caoutchouc-3pt-20a-a-sortie-droite-avec-anneau-de-suspension-13298"
+  },
+  {
+    "id": "cdl-elec",
+    "name": "CDL Elec",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.cdl-elec.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the public TTC price (« Prix catalogue … TTC »), pro prices after login. Checked on /p/outillage-fixation-consommable/borne-a-raccordement-wago-221-…-A4870697"
+  },
+  {
+    "id": "cebeo",
+    "name": "Cebeo",
+    "country": "BE",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.cebeo.be",
+        "pathPrefix": "/catalog/fr-be/products"
+      }
+    ],
+    "imageHosts": ["bel-cebeo.mo.cloudinary.net"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; no public price (login). Category pages also carry Product JSON-LD, hence the products prefix. Checked on /catalog/fr-be/products/pil-guell-2-5-231-c-i-750-gr94-1-10-7606330"
+  },
+  {
+    "id": "cedeo",
+    "name": "Cedeo",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.cedeo.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "verified",
+    "checkedAt": "2026-10-19",
+    "notes": "Adapter (Saint-Gobain storefront). Public price TTC, pro price HT once logged in. Fixture: filtre-magnetique-public-ttc."
+  },
+  {
+    "id": "cgr-robinetterie",
+    "name": "CGR Robinetterie",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.cgr-robinetterie.fr",
+        "pathPrefix": "/fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown (login for pro prices). Checked on /fr/p/robinets-a-boisseau-spherique/robinet-boisseau-spheriq"
+  },
+  {
+    "id": "chausson",
+    "name": "Chausson",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.chausson.fr"
+      }
+    ],
+    "imageHosts": ["cdn.chausson.fr"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown. Checked on /quincaillerie/toile-adhesive-speciale-batiment-lima-largeur"
+  },
+  {
+    "id": "clareo-lighting",
+    "name": "Clareo Lighting",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.clareolighting.com",
+        "pathPrefix": "/fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "productPath": "\\.html$",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD, og:type product; prices after login. Category pages carry Product markup, hence productPath. Checked on /fr/produits-non-documentes-vtac/18900-profile-alu-encastrable-…html"
+  },
+  {
+    "id": "clim-plus",
+    "name": "Clim+",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.climplus.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the public TTC price (« Prix public … TTC »), pro prices after login. Checked on /p/climatisation/unite-interieure-murale-de-pompe-a-chaleur-…-A4726731"
+  },
+  {
+    "id": "climservice",
+    "name": "Climservice",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.climservice.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with microdata, og:type product; price shown. Checked on /nettoyeur-haute-pression-et-pulverisateur/1943-pulverisateu"
+  },
+  {
+    "id": "climshop",
+    "name": "Climshop",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.climshop.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with microdata, og:type product; price shown. Checked on /697-allege-plafonnier-airwell-aw-fwdb018-n91-aw-ymdb018-h91"
+  },
+  {
+    "id": "cofriset",
+    "name": "Cofriset",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.cofriset.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Bot filter: home and sitemap answer « Error 403 - Forbidden » to the built-in browser. Not bypassed; no product page checked."
+  },
+  {
+    "id": "cogeferm",
+    "name": "Cogeferm",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.cogeferm.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown (login for pro prices). Checked on /10824-51525-clavier-a-code-lecteur-centralisable-exterieur-"
+  },
+  {
+    "id": "comptoir-des-pros",
+    "name": "Comptoir des Pros",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.comptoirdespros.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, microdata; price shown (login for pro prices). Checked on /organiseur-packout-compact-profondeur-117-mm-5-compartiment"
+  },
+  {
+    "id": "covap",
+    "name": "Covap",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.covap.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Cooperative showcase site (blog, showrooms, PDF catalogues); ordering happens on the member portal portail.covap.fr (not in sites). No product page, button cannot show."
+  },
+  {
+    "id": "deco-clim",
+    "name": "DECO Clim",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.decoclim.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown. Checked on /decoclim/657-decoclim-alu-vert-mousse-ral-6005-taille-s.htm"
+  },
+  {
+    "id": "delclim",
+    "name": "Delclim",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "delclim.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "disabled",
+    "checkedAt": "2026-10-19",
+    "notes": "Redirects to www.cofriset.fr (supplier cofriset)."
+  },
+  {
+    "id": "desco",
+    "name": "Desco",
+    "country": "BE",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.desco.be"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with og:type product only (no JSON-LD or microdata), og:image on own host; no public price. Checked on /fr-be/produits/info/cuivre-a-souder-coude-90°-mf-28mm?qpid=10095"
+  },
+  {
+    "id": "desenfans",
+    "name": "Desenfans",
+    "country": "BE",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.desenfans.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with og:type product; no public price (login for pro prices). Checked on /tcu-tube-barre-cuivre-ecroui.html"
+  },
+  {
+    "id": "diamond-paris",
+    "name": "Diamond Paris",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.diamond-paris.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /armoires-frigos-congelateurs/-armoire-frigorifique-20x-en-6"
+  },
+  {
+    "id": "diferbat",
+    "name": "Diferbat",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.diferbat.fr"
+      },
+      {
+        "host": "diferbat.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; no public price. Checked on /intratone-platines-a-defilement-intracode-v4-reno-gsm/3632-"
+  },
+  {
+    "id": "dispano",
+    "name": "Dispano",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.dispano.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the public TTC price (« Prix public … TTC »), pro prices after login. Checked on /p/panneau-decoratif/panneau-melamine-decor-…-A4955469"
+  },
+  {
+    "id": "dispart",
+    "name": "Dispart",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.dispart.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the public TTC price (« Prix promo … TTC »), pro prices after login. Checked on /p/outillage-et-entretien/desembouant-fort-…-A7935020"
+  },
+  {
+    "id": "dod",
+    "name": "DOD",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.dod.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the public TTC price (« Prix public (TTC) »), « Votre tarif » after login. Checked on /produit/element-pour-fixation-des-gonds-…-xpr52703.html"
+  },
+  {
+    "id": "ebat",
+    "name": "eBAT",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.ebatpro.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: every URL redirects to /login (« espace professionnel »), empty sitemap."
+  },
+  {
+    "id": "eklor",
+    "name": "Eklor",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "eklor.shop"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; no public price (login for pro prices). Checked on /produit/onduleur-solaredge-home-hub-multirange-2-2-se10000h"
+  },
+  {
+    "id": "elec44",
+    "name": "Elec44",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "elec44.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown (login for pro prices). Checked on /prises-green-up/110218-legrand-kit-pret-a-poser-green-up-ac"
+  },
+  {
+    "id": "electro-depot",
+    "name": "Electro Dépôt",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.electrodepot.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown. Checked on /informatique-gaming-tablette/reseau-connectique/cable-rj45-"
+  },
+  {
+    "id": "epgc",
+    "name": "EPGC",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "b2b.epgc.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: b2b.epgc.com redirects to /en/login, no public product page."
+  },
+  {
+    "id": "esc-grossiste",
+    "name": "ESC Grossiste",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.esc-grossiste.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; no public price (login for pro prices). Checked on /boutique/spa/46574-spa-gonflable-vita-4-places-de-chez-nets"
+  },
+  {
+    "id": "expelec",
+    "name": "Expelec",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "expelec.eu"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /fr/controleur-dmx/3207-wolfmix-w1-mkiii-3510360003544.html"
+  },
+  {
+    "id": "facq",
+    "name": "Facq",
+    "country": "BE",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.facq.be"
+      }
+    ],
+    "imageHosts": ["media.facq.be"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; no public price. Checked on /fr/particuliers/salle-de-bains/le-meuble-de-salle-de-bains/"
+  },
+  {
+    "id": "fic",
+    "name": "Fic",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.fic-pro.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; shows « Prix public HT » then TTC. No sitemap. Checked on /article/ODM5MDY="
+  },
+  {
+    "id": "fluidra",
+    "name": "Fluidra",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "pro.fluidra.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: the home is public but every catalogue page redirects to /fr_fr/customer/account/login."
+  },
+  {
+    "id": "fmb39",
+    "name": "FMB39",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.fmb39.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product pages with no JSON-LD/microdata/og product, so the button cannot show; « Produit réservé aux professionnels », no public price. Checked on /moteurs-filaires-moteur-filaire-becker-…,87-102548.htm"
+  },
+  {
+    "id": "foussier",
+    "name": "Foussier",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.foussier.fr"
+      }
+    ],
+    "imageHosts": ["static.foussier.fr"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown (login for pro prices). Checked on /fp/lame-de-scie-sauteuse-bois-denture-inversee/47107"
+  },
+  {
+    "id": "france-air",
+    "name": "France Air",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "espacepro.france-air.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with microdata (price, image on own host); price shown without an HT/TTC label on this B2B site, logged out. Checked on /kit-clim"
+  },
+  {
+    "id": "france-automatismes",
+    "name": "France Automatismes",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.france-automatismes.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with microdata, og:type product; price shown. Checked on /kits-motorisation-pour-portail-double-battant/10244-motoris"
+  },
+  {
+    "id": "francofa-eurodis",
+    "name": "Francofa Eurodis",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.francofa-eurodis.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; no public price. Checked on /alarmes-type-4-radio-orexa-cordia/106982-26437-kit-orexa-ra"
+  },
+  {
+    "id": "fritec",
+    "name": "Fritec",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "fritec.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; no public price (login for pro prices). Checked on /14827-frigorificos-compactos-ecopack-4m-22x-awm-a2l-groupe-"
+  },
+  {
+    "id": "g-systems",
+    "name": "G-systems",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "gsystems.wfshop.eu"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "NL webshop; product page with no JSON-LD/microdata/og product, so the button cannot show; no price logged out. Images on d2l8seq39bgs7i.cloudfront.net. Checked on /product/05011151/Clam_moederbord_voor_Sirio…html"
+  },
+  {
+    "id": "gdv",
+    "name": "GDV",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "gdv.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "PrestaShop product page with JSON-LD, og:type product; « Connectez-vous pour consulter les prix ». Category pages: no Product markup. Checked on /interphonie-controle-d-acces-residentiel/4652-alimentation-…"
+  },
+  {
+    "id": "gff",
+    "name": "GFF",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.lagff.com"
+      },
+      {
+        "host": "lagff.com"
+      }
+    ],
+    "imageHosts": ["api.lagff.com"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /Pompe-a-chaleur-monobloc-air-eau-S-Therm-Yukon-M-P-SMHM-100"
+  },
+  {
+    "id": "grassin-decors",
+    "name": "Grassin Décors",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.grassin-decors.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with og:type product; no public price. Checked on /accessoire-sol-et-mur/accessibilite-mise-aux-normes-pmr/aut"
+  },
+  {
+    "id": "grossiste-led",
+    "name": "Grossiste LED",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.grossiste-led.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; no public price (login for pro prices). Checked on /applique-murale/3155-applique-detection-exterieure-led-gibr"
+  },
+  {
+    "id": "heytec",
+    "name": "Heytec",
+    "country": "BE",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "webshop.heytec.be"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "CGI webshop with session-encoded URLs, no sitemap; article page with no JSON-LD/microdata/og product, so the button cannot show; no price logged out (LOGIN)."
+  },
+  {
+    "id": "highlite",
+    "name": "Highlite",
+    "country": "EU",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.highlite.com"
+      }
+    ],
+    "imageHosts": ["assets.highlite.com"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "A « Human verification » page showed on first load and cleared by itself. Product page with microdata (name only); « R.R.P. … Hors Taxe », dealer prices after login. Checked on /fr/42533-photon-wash.html"
+  },
+  {
+    "id": "hitmusic",
+    "name": "Hitmusic",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "hitmusic.eu"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /produit/bti-expobeam-filter-30deg/"
+  },
+  {
+    "id": "hydralians",
+    "name": "Hydralians",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.hydralians.fr"
+      }
+    ],
+    "imageHosts": ["assets.hydralians.fr", "medias.descours-cabaud.com"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; no public price (login for pro prices). Checked on /chloryter-hypochlorite-de-calcium-3-3-kg-bayrol-73246490"
+  },
+  {
+    "id": "ikea",
+    "name": "IKEA",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.ikea.com",
+        "pathPrefix": "/fr/fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "verified",
+    "checkedAt": "2026-10-19",
+    "notes": "Adapter. Fixture: kallax-promo (struck price, eco-contribution)."
+  },
+  {
+    "id": "integral-systeme",
+    "name": "Intégral Système",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.integral-systeme.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; no public price (login for pro prices). Checked on /41972-type-4-module-2e-2s-blanc-radio-pour-hub-tactile-seul"
+  },
+  {
+    "id": "jean-hue-socoda",
+    "name": "Jean Hue & Socoda",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.jeanhue-socoda.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD listing every variant, the first one is not the displayed variant; logged-out price TTC. Checked on /accessoires-et-consommables/…/vitrificateur-parquet-environnement-blanchon-satine-5l"
+  },
+  {
+    "id": "krannich",
+    "name": "Krannich",
+    "country": "EU",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "shop.krannich-solar.com"
+      }
+    ],
+    "imageHosts": ["cdn.shop.krannich-solar.com"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; no public price. Checked on /de-de/SigenStor-20.0-Energy-Controller-15.0-TP/0165154"
+  },
+  {
+    "id": "la-plateforme-du-batiment",
+    "name": "La Plateforme du Bâtiment",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.laplateforme.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "JS catalogue; product page with no JSON-LD/microdata/og product, so the button cannot show; prices after login (card number). Checked on /catalogue/produit/3106/panneau-de-construction-l.250-x-l.-60-cm-…"
+  },
+  {
+    "id": "lalliard",
+    "name": "Lalliard",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.lalliard.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; public price TTC, accounts for pros and individuals. Checked on /produit/libre-service/…/navykit-kit-de-pose-preparateur-navylam-xrp4481-xpr5821.html"
+  },
+  {
+    "id": "lapeyre",
+    "name": "Lapeyre",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.lapeyre.fr"
+      }
+    ],
+    "imageHosts": ["www.statics-lapeyre.fr"],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /produits/escalier-rampe-main-courante/escalier/escalier-dou"
+  },
+  {
+    "id": "lariviere",
+    "name": "Larivière",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "eshop.lariviere.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: eshop.lariviere.fr/s/ redirects to /s/login (« Connectez-vous à votre espace client »)."
+  },
+  {
+    "id": "le-froid-pecomark",
+    "name": "Le Froid Pecomark",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.lefroid.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; public price « … € HT / Pièce ». Checked on /fr/c/p/101159"
+  },
+  {
+    "id": "ledkia",
+    "name": "Ledkia",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.ledkia.com",
+        "pathPrefix": "/fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "productPath": "\\.html$",
+    "checkedAt": "2026-10-20",
+    "notes": "Host serves every country, hence /fr. Product page with JSON-LD, price TTC (« TVA incl. »). Category pages carry Product JSON-LD, hence productPath. Checked on /fr/acheter-reglettes-led-etanches/1165-…html"
+  },
+  {
+    "id": "legallais",
+    "name": "Legallais",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.legallais.com"
+      }
+    ],
+    "imageHosts": ["cdn.legallais.com"],
+    "defaultPriceBasis": "HT",
+    "support": "verified",
+    "checkedAt": "2026-10-19",
+    "notes": "Adapter. Prices reserved to logged-in professionals. Fixture: mousse-coupe-feu."
+  },
+  {
+    "id": "leroy-merlin",
+    "name": "Leroy Merlin",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.leroymerlin.fr"
+      }
+    ],
+    "imageHosts": ["media.adeo.com"],
+    "defaultPriceBasis": "TTC",
+    "support": "verified",
+    "productPath": "^/produits/.+\\.html$",
+    "checkedAt": "2026-10-19",
+    "notes": "Adapter. DataDome blocks scripts, fine in a browser. Fixture: sac-gravats-lot."
+  },
+  {
+    "id": "linum",
+    "name": "Linum",
+    "country": "EU",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.linum.eu"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD, og:type product, images on own host; logged out the JSON-LD price is a 0.00 placeholder, prices need a partner login. Checked on /fr/hvac/equipement-hvac-r/…-hvt-8182-000"
+  },
+  {
+    "id": "lmc-store",
+    "name": "LMC Store",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.lmcstore.com",
+        "pathPrefix": "/fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD and microdata, images on own host; prices after login (« Prix(HT) »). The /fr prefix also matches /fr_be. Checked on /fr/produit-de-nettoyage.html"
+  },
+  {
+    "id": "maison-etanche",
+    "name": "Maison Étanche",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.maison-etanche.com"
+      }
+    ],
+    "imageHosts": ["m1.maison-etanche.com", "m2.maison-etanche.com"],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; no public price (login for pro prices). Checked on /fr/kit-moquette-de-pierre-piscine-drainante-revetement-anti"
+  },
+  {
+    "id": "manomano",
+    "name": "ManoMano",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.manomano.fr"
+      }
+    ],
+    "imageHosts": ["cdn.manomano.com"],
+    "defaultPriceBasis": "TTC",
+    "support": "verified",
+    "checkedAt": "2026-10-19",
+    "notes": "Adapter. Cloudflare may challenge automated browsers; fine in a regular browser. Fixture: chaises-variantes (one JSON-LD Product per variant)."
+  },
+  {
+    "id": "mauris-bois",
+    "name": "Mauris Bois",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.mauris.fr"
+      }
+    ],
+    "imageHosts": ["medias.groupe-samse.fr"],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown (login for pro prices). Checked on /1616622-lame-bambou-dasso-ctech-max-20x137mm-3-04m.html"
+  },
+  {
+    "id": "miidex",
+    "name": "Miidex",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.miidex.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with microdata, og:type product; no public price. Checked on /dalle/3896-dalle-led-blanc-pmma-595x595-28w-4000k-prismatiq"
+  },
+  {
+    "id": "mildecor",
+    "name": "Mildecor",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.mildecor.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /boutique/p/peinture-mate-interieur-et-exterieur-flugger"
+  },
+  {
+    "id": "mr-bricolage",
+    "name": "Mr.Bricolage",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.mr-bricolage.fr"
+      }
+    ],
+    "imageHosts": ["media.mr-bricolage.fr"],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /poeles-a-granules-egra-10kw-strauss.html"
+  },
+  {
+    "id": "mybleurouge",
+    "name": "MyBleuRouge",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.mybleurouge.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Ordering site for professionals; product page with no JSON-LD/microdata/og product, so the button cannot show; prices « … € HT » (« Prix public »). Checked on /fDS002350/THERMOSTAT-DIGITAL-DOMOCABLE"
+  },
+  {
+    "id": "oeg",
+    "name": "OEG",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.oeg.net"
+      }
+    ],
+    "imageHosts": ["cdn.oeg.net"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown. Checked on /fr/vanne-d-angle-combinee-1-2-avec-aerateur-de-tuyau-et-cla"
+  },
+  {
+    "id": "one-elec",
+    "name": "One-Elec",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.one-elec.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with og:type product; no public price. Checked on /Protection-des-departs/disjoncteurs/disjoncteurs-de-1-a-125"
+  },
+  {
+    "id": "ouest-isol-ventil",
+    "name": "Ouest Isol & Ventil",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.ouestisolventil.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "OroCommerce product page with no JSON-LD/microdata/og product, so the button cannot show; « Prix HT » column empty until login. Checked on /unite-exterieure-gmv6-heat-recovery-tourelle"
+  },
+  {
+    "id": "partedis",
+    "name": "Partedis",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.partedis.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "WordPress showcase site (posts, branches, suppliers, PDF catalogues); no product page or shop in the sitemap. Button cannot show."
+  },
+  {
+    "id": "pieces-xpress",
+    "name": "Pièces Xpress",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.piecesxpress.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the TTC price (HT shown too), pro prices after login. Checked on /article-405280-527242-capteur-de-temperature-pour-ceti-monoval-…htm"
+  },
+  {
+    "id": "pilotefilms",
+    "name": "Pilotefilms",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "pilotefilms.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "productPath": "^/[^/]+/\\d+-[^/]+\\.html$",
+    "checkedAt": "2026-10-20",
+    "notes": "PrestaShop product page with microdata, og:type product; no price logged out. Category pages carry Product microdata, hence productPath. Checked on /unites-traitement-modulaires-ST2110/5136-…html"
+  },
+  {
+    "id": "point-p",
+    "name": "Point.P",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.pointp.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "verified",
+    "checkedAt": "2026-10-19",
+    "notes": "Adapter (Saint-Gobain storefront). Prices often per hundred. Fixture: bloc-beton-par-cent."
+  },
+  {
+    "id": "porcelanosa",
+    "name": "Porcelanosa",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.porcelanosa.com",
+        "pathPrefix": "/fr"
+      },
+      {
+        "host": "store.porcelanosa.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "www.porcelanosa.com/fr redirects to store.porcelanosa.com/fr. Product page with no JSON-LD/microdata/og product, so the button cannot show; consumer price without HT/TTC label. Checked on /fr/p-404-black"
+  },
+  {
+    "id": "ppc-pieces-detachees",
+    "name": "PPC Pièces détachées",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.pieces-chauffe.fr"
+      },
+      {
+        "host": "pieces-chauffe.fr"
+      }
+    ],
+    "imageHosts": ["partedis-ppc-web-prod.vm.bcisoft.net"],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown (login for pro prices). Checked on /p/thermostat-dambiance-avec-afficheur-lcd-rdh100-siemens-86"
+  },
+  {
+    "id": "prestige-distribution",
+    "name": "Prestige Distribution",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.prestige-distribution.eu"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "WooCommerce: logged out, category and product URLs redirect to the home page (SSO login); empty sitemap. No public product page."
+  },
+  {
+    "id": "prolians",
+    "name": "Prolians",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.prolians.fr"
+      }
+    ],
+    "imageHosts": ["assets.prolians.fr", "medias.descours-cabaud.com"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; no public price (login for pro prices). Checked on /coffret-embout-de-vissage-pico-serrage-1-4-avec-cliquet-fac"
+  },
+  {
+    "id": "pum",
+    "name": "PUM",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.mypum.fr"
+      }
+    ],
+    "imageHosts": ["static.mypum.fr"],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown (login for pro prices). Checked on /amenagement-exterieur/caniveaux-a15-a-d400-et-siphons-de-co"
+  },
+  {
+    "id": "qtech",
+    "name": "Qtech",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.qtech.re"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Réunion store; product page with no JSON-LD/microdata/og product, so the button cannot show; shows HT then TTC (DOM VAT). Checked on /fiche/bouton-chene-naturel-vernis-d44mm-piece-47828"
+  },
+  {
+    "id": "quincaillerie-aixoise",
+    "name": "Quincaillerie Aixoise",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.quincaillerie-aixoise.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "JS webcatalogue; product page with no JSON-LD/microdata/og product, so the button cannot show; « Connectez-vous pour voir les prix », basis unknown. Checked on /catalogue/P00/P00.050/P00.050.040/55105"
+  },
+  {
+    "id": "resistex",
+    "name": "Résistex",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.resistex-sa.com"
+      }
+    ],
+    "imageHosts": ["api.resistex-sa.com"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Range page with JSON-LD (no offer price), og:type product, image on api.resistex-sa.com; « Connectez-vous pour voir vos prix nets ». Checked on /gamme/aurea"
+  },
+  {
+    "id": "reuter",
+    "name": "Reuter",
+    "country": "EU",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.reuter.com",
+        "pathPrefix": "/fr-fr"
+      }
+    ],
+    "imageHosts": ["img.reuter.com"],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "productPath": "^/fr-fr/p/",
+    "checkedAt": "2026-10-20",
+    "notes": "Host serves every country, hence /fr-fr. Product page with JSON-LD price, TTC (France, 20 % TVA). Category pages carry Product JSON-LD, hence productPath. Checked on /fr-fr/p/bianemo-huatau-…/1241549"
+  },
+  {
+    "id": "rexel",
+    "name": "Rexel",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.rexel.fr"
+      }
+    ],
+    "imageHosts": ["api.rexel.fr"],
+    "defaultPriceBasis": "HT",
+    "support": "verified",
+    "checkedAt": "2026-10-19",
+    "notes": "Adapter (no structured data). Prices for logged-in customers only. Fixture: disjoncteur-sans-connexion."
+  },
+  {
+    "id": "richardson",
+    "name": "Richardson",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.richardson.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD (offer without price), images on own host; no price shown logged out. Checked on /tous-les-produits/climatisation-ventilation/vmc/vmc-individuelle/control-zehnder-…-655011100"
+  },
+  {
+    "id": "robinetterie-hammel",
+    "name": "Robinetterie Hammel",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.robinetterie-hammel.fr"
+      }
+    ],
+    "imageHosts": ["cdn.hammel.fr"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown (login for pro prices). Checked on /plomberie/regulateur-de-pression-secupro-avec-manometre-mal"
+  },
+  {
+    "id": "roofmart",
+    "name": "Roofmart",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.roofmart.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Salesforce B2B store; product page with no JSON-LD/microdata/og product, so the button cannot show; public price « € … HT / unité ». Checked on /s/product/truelle-langue-de-chat-…/01t7Q000005U0OdQAK"
+  },
+  {
+    "id": "rouchy",
+    "name": "Rouchy",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "espacepro.rouchy.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; « Prix net HT » and « Prix public HT » shown. Checked on /produit/33738/Resine-a-base-de-silicate-urethane-EPORIP-SCR"
+  },
+  {
+    "id": "screwfix",
+    "name": "Screwfix",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.screwfix.fr"
+      }
+    ],
+    "imageHosts": ["media.screwfix.fr"],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /coffret-professionnel-de-1400-vis-polyvalentes-a-tete-frais"
+  },
+  {
+    "id": "seigneurie-gauthier",
+    "name": "Seigneurie Gauthier",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.seigneuriegauthier.com"
+      }
+    ],
+    "imageHosts": ["dam-cdn.ppg.com"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown (login for pro prices). Checked on /peintures/peintures-interieures/impressions/printoprim-bas-"
+  },
+  {
+    "id": "servistores",
+    "name": "ServiStores",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.servistores.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown (login for pro prices). Checked on /html/produits/sortie-de-caisson-volet-roulant-Decoper-DH6P7"
+  },
+  {
+    "id": "sfic",
+    "name": "SFIC",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.sfic.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is a TTC price (« Prix professionnel … TTC »), account prices after login. Checked on /p/isolation/panneau-isolant-composite-…-A4070925"
+  },
+  {
+    "id": "sider",
+    "name": "Sider",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.sider.biz"
+      }
+    ],
+    "imageHosts": ["media.sider.biz"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD price (basis not stated) while the page shows « Public HT 0,00 € », prices after login. Checked on /produit/article-116210"
+  },
+  {
+    "id": "silamp",
+    "name": "Silamp",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.silamp.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown (login for pro prices). Checked on /products/reglette-led-etanche-120cm-36w-ip65-120lm-w-interc"
+  },
+  {
+    "id": "sisca-sidv",
+    "name": "SISCA SIDV",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.sidv.fr"
+      }
+    ],
+    "imageHosts": ["cdn.sisca.fr"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "SPA: product page with JSON-LD injected client-side; JSON-LD price is the public HT price (« PPI HT »). Many sitemap product URLs 404. Checked on /produits/FA6DA98A-D147-4E19-A435-78423DC18BDC"
+  },
+  {
+    "id": "smartsd",
+    "name": "smartSD",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "smartsd.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "English-only site (the /fr product URL is a 404); product page with no JSON-LD/microdata/og product, so the button cannot show; « Login for price info ». Checked on /en/product/10600291/2n-9138511"
+  },
+  {
+    "id": "solmur",
+    "name": "Solmur",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.solmur.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with og:type product; no public price. Checked on /accessoire-sol-et-mur/accessibilite-mise-aux-normes-pmr/aut"
+  },
+  {
+    "id": "sonepar",
+    "name": "Sonepar",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.sonepar.fr",
+        "pathPrefix": "/catalog/fr-fr/products"
+      }
+    ],
+    "imageHosts": ["fra-connect.mo.cloudinary.net"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; no public price (login). Category pages also carry Product JSON-LD, hence the products prefix. Checked on /catalog/fr-fr/products/sick-capteurs-…-00067425250"
+  },
+  {
+    "id": "sonepar-climate",
+    "name": "Sonepar Climate",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "climate.sonepar.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Magento product page with microdata, og:type product, og:image on own host; no price rendered logged out (« Accédez à vos prix personnalisés »). Checked on /support-mural-supanv200bxl-…"
+  },
+  {
+    "id": "sorofi",
+    "name": "Sorofi",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.sorofi.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with og:type product; no public price. Checked on /disjoncteur-phase-neutre-dnx-4500-6ka-borne-a-vis-courbe-c."
+  },
+  {
+    "id": "tbs",
+    "name": "TBS",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.tbs-international.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; « Prix nets hors TVA », « Enregistrez-vous pour consulter nos prix ». Checked on /fr/fr/Installation/…/Mastic-d-étanchéité-pour-parquets-422-sid262621.html"
+  },
+  {
+    "id": "tecnomat",
+    "name": "Tecnomat",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.tecnomat.fr"
+      }
+    ],
+    "imageHosts": ["media.adeo.com"],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "productPath": "^/produits/",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD; JSON-LD price is the TTC price (HT shown too). Brand pages carry Product markup, hence productPath. Checked on /produits/colonne-de-douche-…-25137570.html"
+  },
+  {
+    "id": "tereva",
+    "name": "Téréva",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.tereva.fr"
+      }
+    ],
+    "imageHosts": ["groupe-mb.scene7.com"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown (login for pro prices). Checked on /A-917603-aquance-colonne-de-douche-thermostatique-tablette-"
+  },
+  {
+    "id": "tevah",
+    "name": "TEVAH",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.tevah.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with microdata; no public price. Checked on /shop/29-5002-plus-pack-tsunami-4g-centrale-1-porte-16-bouto"
+  },
+  {
+    "id": "trenois",
+    "name": "Trenois",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.trenois.com"
+      }
+    ],
+    "imageHosts": ["media.trenois.com"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; no public price (login for pro prices). Checked on /p/chaussures-d-electricien-storm-hot-storm-sb-pl-wpa-e-fo-l"
+  },
+  {
+    "id": "unifi",
+    "name": "UniFi Store",
+    "country": "EU",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "eu.store.ui.com"
+      }
+    ],
+    "imageHosts": ["cdn.ecomm.ui.com", "images.svc.ui.com"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD; price shown. Checked on /eu/en/category/accessories-rack-mount/collections/42u-rack-"
+  },
+  {
+    "id": "van-marcke",
+    "name": "Van Marcke",
+    "country": "BE",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.vanmarcke.com"
+      }
+    ],
+    "imageHosts": ["media.vanmarcke.com", "s3.vanmarcke.com"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with JSON-LD (offer without price), og:type product; no price logged out. Checked on /fr/salle-de-bains/produits/robinets/robinet-de-lavabo/hansgrohe-metropol-mitigeur-…"
+  },
+  {
+    "id": "viessmann",
+    "name": "Viessmann",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "shop.viessmann.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "disabled",
+    "checkedAt": "2026-10-19",
+    "notes": "shop.viessmann.com does not resolve (DNS), checked 2026-10-19."
+  },
+  {
+    "id": "vis-express",
+    "name": "Vis Express",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "www.vis-express.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "UNKNOWN",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with JSON-LD, og:type product; price shown. Checked on /boite-de-d-embout/395077-assortiment-de-31-embout.html"
+  },
+  {
+    "id": "visiotech",
+    "name": "Visiotech",
+    "country": "EU",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.visiotechsecurity.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "SPA; product page with no JSON-LD/microdata/og product, so the button cannot show; « Consulter le prix » after login. Images on d1x12lhh8s9nlj.cloudfront.net. Checked on /fr/produits/…/cameras-1081/uv-uac-b115-f28-detail"
+  },
+  {
+    "id": "vivre-en-bois",
+    "name": "Vivre en Bois",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.vivreenbois.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "« Vivre en Bois Pro »; product page with no JSON-LD/microdata/og product, so the button cannot show; « Tarif public … € HT ». Checked on /produit/panneau-clt-bois-hexakit-…"
+  },
+  {
+    "id": "vst",
+    "name": "VST Coopérative",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "extranet-adherents.vst.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: redirects to /pa10/page-d-authentification (« Vente réservée aux professionnels »)."
+  },
+  {
+    "id": "wallgreenbox",
+    "name": "Wallgreenbox",
+    "country": "FR",
+    "segment": "retail",
+    "sites": [
+      {
+        "host": "wallgreenbox.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "TTC",
+    "support": "generic",
+    "checkedAt": "2026-10-19",
+    "notes": "Product page with microdata, og:type product; price shown. Checked on /bornes-de-recharge-vehicules-electriques/39-wallbox-saturn-"
+  },
+  {
+    "id": "wendel",
+    "name": "Wendel",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "moncomptepro.wendel.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Login wall confirmed: moncomptepro.wendel.fr redirects to /forms/identification.aspx."
+  },
+  {
+    "id": "westcoast-france",
+    "name": "Westcoast France",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.westcoastfrance.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Host resolves but ports 80 and 443 time out (2026-10-19 and 2026-10-20); domain registration active. Not disabled: may be IP filtering, check from another network."
+  },
+  {
+    "id": "wurth",
+    "name": "Würth",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "eshop.wurth.fr"
+      }
+    ],
+    "imageHosts": ["media.witglobal.net"],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Intershop product page with JSON-LD (offer without price), image on media.witglobal.net; « Prix affichés aux clients après connexion ». Checked on /Creme-lavante-CREME-LAVANTE-5L/0893934.sku/fr/FR/EUR/"
+  },
+  {
+    "id": "yesss-electrique",
+    "name": "Yesss Electrique",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.yesss-fr.com"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with no JSON-LD/microdata/og product, so the button cannot show; catalogue only, no price logged out. Checked on /fiche/schneider-electric-s520445-odace-prise-tv-simple-blanche-…"
+  },
+  {
+    "id": "zolpan",
+    "name": "Zolpan",
+    "country": "FR",
+    "segment": "pro",
+    "sites": [
+      {
+        "host": "www.zolpan.fr"
+      }
+    ],
+    "imageHosts": [],
+    "defaultPriceBasis": "HT",
+    "support": "generic",
+    "checkedAt": "2026-10-20",
+    "notes": "Product page with microdata (name, brand, image on own host); no price (catalogue). Category pages: no Product markup. Checked on /catalogue-produits/…/primaire-fond-absorbant-uzin-pe-375"
+  }
+]
