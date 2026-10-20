@@ -54,7 +54,7 @@ jobs:
       - name: Zip the builds
         run: |
           for browser in chrome edge firefox; do
-            pnpm --filter @artinova-software/browser-extension run zip -- --browser "$browser" --target production
+            pnpm --filter @artinova-software/browser-extension run zip --browser "$browser" --target production
           done
 
       - name: Upload the zips
