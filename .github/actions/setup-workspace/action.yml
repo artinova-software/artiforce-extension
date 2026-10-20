@@ -1,0 +1,20 @@
+name: Set up the workspace
+description: >-
+  Node from .nvmrc, pnpm from the packageManager pin, then a frozen-lockfile
+  install. Shared by ci.yml and release.yml so every job installs the same way.
+
+runs:
+  using: composite
+  steps:
+    - name: Use pnpm
+      uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+
+    - name: Use Node.js
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      with:
+        node-version-file: .nvmrc
+        cache: pnpm
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install --frozen-lockfile
