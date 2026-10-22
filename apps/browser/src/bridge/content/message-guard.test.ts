@@ -17,7 +17,7 @@ function event(
 }
 
 const request = (extra: Record<string, unknown> = {}) => ({
-  channel: "artinova-bridge",
+  channel: "artiforce-bridge",
   direction: "request",
   protocol: 1,
   id: "r1",
@@ -41,7 +41,7 @@ describe("message guard", () => {
   });
 
   it("is inactive on an origin outside the allow-list", () => {
-    const outside = createMessageGuard({ window, allowedOrigins: ["https://app.artinova.fr"] });
+    const outside = createMessageGuard({ window, allowedOrigins: ["https://app.artiforce.fr"] });
     expect(outside.active).toBe(false);
     expect(outside.check(event(request()))).toEqual({ kind: "ignore" });
   });

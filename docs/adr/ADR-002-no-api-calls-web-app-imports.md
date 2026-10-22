@@ -1,4 +1,4 @@
-# ADR-002 — The extension never calls the Artinova API; the web app imports
+# ADR-002 — The extension never calls the Artiforce API; the web app imports
 
 ## Status
 
@@ -10,8 +10,8 @@ Accepted.
 
 ## Decision
 
-The extension holds no Artinova credentials and sends no request to the
-Artinova API. It keeps the captured products locally. The Artinova web app
+The extension holds no Artiforce credentials and sends no request to the
+Artiforce API. It keeps the captured products locally. The Artiforce web app
 reads them through the `postMessage` bridge ([ADR-006](ADR-006-postmessage-bridge.md)),
 shows a controlled preview (duplicates, HT/TTC, `margin:view` /
 `margin:manage` rights) and writes with its own session and SDK

@@ -1,4 +1,4 @@
-import type { CapturedProduct } from "@artinova-software/extension-suppliers/registry";
+import type { CapturedProduct } from "@artiforce-software/extension-suppliers/registry";
 
 /** A valid captured product (Leroy Merlin), with overrides. */
 export function product(overrides: Partial<CapturedProduct> = {}): CapturedProduct {

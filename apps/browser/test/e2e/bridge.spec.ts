@@ -1,19 +1,19 @@
 import type { Page } from "@playwright/test";
 
-import type { BridgeClient } from "@artinova-software/extension-bridge";
+import type { BridgeClient } from "@artiforce-software/extension-bridge";
 
 import { buttonHost, clickButton } from "./button";
 import { expect, readCart, test } from "./fixtures";
 import { APP, FOREIGN_APP, SHOP } from "./routes";
 
 type AppWindow = Window & {
-  artinovaBridge: { client: BridgeClient; events: { event: string; data: unknown }[] };
+  artiforceBridge: { client: BridgeClient; events: { event: string; data: unknown }[] };
 };
 
 async function call(page: Page, command: string, params: unknown): Promise<unknown> {
   return page.evaluate(
     async ([name, args]) => {
-      const { client } = (window as unknown as AppWindow).artinovaBridge;
+      const { client } = (window as unknown as AppWindow).artiforceBridge;
       try {
         return {
           ok: true,
@@ -28,7 +28,7 @@ async function call(page: Page, command: string, params: unknown): Promise<unkno
 }
 
 async function events(page: Page) {
-  return page.evaluate(() => (window as unknown as AppWindow).artinovaBridge.events);
+  return page.evaluate(() => (window as unknown as AppWindow).artiforceBridge.events);
 }
 
 async function postRaw(page: Page, message: unknown) {
@@ -79,7 +79,7 @@ test.describe("bridge", () => {
         items: [
           {
             designation: "Perceuse visseuse sans fil 18 V",
-            supplier: { id: "artinova-test-shop", name: "Boutique de test" },
+            supplier: { id: "artiforce-test-shop", name: "Boutique de test" },
             supplierCode: "PV-18",
             gtin: "4006381333931",
             price: { cents: 8990, currency: "EUR", basis: "TTC" },
@@ -127,7 +127,7 @@ test.describe("bridge", () => {
   test("rejects malformed requests with a code", async ({ context }) => {
     const app = await context.newPage();
     await app.goto(`${APP}/`);
-    const base = { channel: "artinova-bridge", direction: "request", protocol: 1 };
+    const base = { channel: "artiforce-bridge", direction: "request", protocol: 1 };
     expect(
       await postRaw(app, { ...base, id: "a1", command: "dropTables", params: {} }),
     ).toMatchObject({

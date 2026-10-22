@@ -20,7 +20,7 @@ The web app receives them with `getImages`.
 
 ## Rationale
 
-- The Artinova API refuses external image URLs and the web app's CSP blocks
+- The Artiforce API refuses external image URLs and the web app's CSP blocks
   supplier CDNs, but already allows `img-src data: blob:`.
 - Downloading in the service worker uses the extension's host permissions, so
   supplier CORS rules do not apply; omitting credentials keeps the user's

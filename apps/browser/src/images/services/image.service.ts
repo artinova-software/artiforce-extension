@@ -1,7 +1,7 @@
 import {
   isAllowedImageHost,
   type SupplierRecord,
-} from "@artinova-software/extension-suppliers/registry";
+} from "@artiforce-software/extension-suppliers/registry";
 
 import type { CartItem } from "../../cart/models/cart-item";
 import type { CartService } from "../../cart/services/cart.service";

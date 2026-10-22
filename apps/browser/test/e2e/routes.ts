@@ -3,11 +3,11 @@ import { join } from "node:path";
 
 import type { BrowserContext, Route } from "@playwright/test";
 
-export const SHOP = "https://shop.artinova.test";
-export const IMAGES = "https://img.artinova.test";
-export const APP = "https://app.artinova.test";
+export const SHOP = "https://shop.artiforce.test";
+export const IMAGES = "https://img.artiforce.test";
+export const APP = "https://app.artiforce.test";
 /** An origin outside the bridge allow-list, with the same fake web app page. */
-export const FOREIGN_APP = "https://evil.artinova-test.example";
+export const FOREIGN_APP = "https://evil.artiforce-test.example";
 
 const HERE = import.meta.dirname;
 const BUILD = join(HERE, "..", "..", "build", "chrome-e2e");
@@ -18,7 +18,7 @@ function fulfill(route: Route, body: Buffer | string, contentType: string, statu
   return route.fulfill({ status, body, contentType, headers: { "cache-control": "no-store" } });
 }
 
-/** Fake supplier shop, image CDN and Artinova web app. */
+/** Fake supplier shop, image CDN and Artiforce web app. */
 export async function installRoutes(context: BrowserContext): Promise<void> {
   await context.route(`${SHOP}/**`, (route) => {
     const { pathname } = new URL(route.request().url());

@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 /**
- * A selection item as the web app receives it. Field names follow Artinova's
+ * A selection item as the web app receives it. Field names follow Artiforce's
  * CatalogItem; money is integer cents. The web app treats every field as
  * untrusted input (ADR-006) and asks the user to confirm HT/TTC.
  */

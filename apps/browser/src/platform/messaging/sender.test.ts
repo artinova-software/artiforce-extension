@@ -7,7 +7,7 @@ const ID = "abcdefghijklmnopabcdefghijklmnop";
 const context: SenderContext = {
   extensionId: ID,
   extensionOrigin: `chrome-extension://${ID}`,
-  artinovaOrigins: ["https://app.artinova.fr", "http://localhost:3000"],
+  artiforceOrigins: ["https://app.artiforce.fr", "http://localhost:3000"],
   isSupplierUrl: (url) => url.startsWith("https://www.leroymerlin.fr/"),
 };
 const tab = { id: 1 } as chrome.tabs.Tab;
@@ -26,7 +26,7 @@ describe("classifySender", () => {
     ],
     [
       "bridge top frame",
-      { id: ID, tab, frameId: 0, url: "https://app.artinova.fr/devis/1" },
+      { id: ID, tab, frameId: 0, url: "https://app.artiforce.fr/devis/1" },
       SenderKind.BRIDGE_CONTENT,
     ],
     [

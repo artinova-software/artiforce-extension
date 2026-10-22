@@ -131,16 +131,16 @@
     "notes": "Adapter (no structured data on the page). Fixture: disjoncteur-legrand."
   },
   {
-    "id": "artinova-test-shop",
+    "id": "artiforce-test-shop",
     "name": "Boutique de test",
     "country": "FR",
     "segment": "retail",
     "sites": [
       {
-        "host": "shop.artinova.test"
+        "host": "shop.artiforce.test"
       }
     ],
-    "imageHosts": ["img.artinova.test"],
+    "imageHosts": ["img.artiforce.test"],
     "defaultPriceBasis": "TTC",
     "support": "verified",
     "productPath": "^/produits/",

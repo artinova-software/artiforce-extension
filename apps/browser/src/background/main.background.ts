@@ -1,4 +1,4 @@
-import { findSupplierForUrl, getSupplier } from "@artinova-software/extension-suppliers/registry";
+import { findSupplierForUrl, getSupplier } from "@artiforce-software/extension-suppliers/registry";
 
 import { type AppConfig, loadAppConfig } from "../platform/config/app-config";
 import { BrowserApi } from "../platform/browser/browser-api";
@@ -60,7 +60,7 @@ export class MainBackground {
         classifySender(sender, {
           extensionId: BrowserApi.getExtensionId(),
           extensionOrigin,
-          artinovaOrigins: this.config.artinovaOrigins,
+          artiforceOrigins: this.config.artiforceOrigins,
           isSupplierUrl: (url) => supplierFor(url) !== undefined,
         }),
     });

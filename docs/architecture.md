@@ -10,9 +10,9 @@ flowchart LR
   subgraph Supplier tab
     SB["content/supplier-button<br/>(closed Shadow DOM)"]
   end
-  subgraph Artinova tab
-    APP["Artinova web app<br/>(libs/bridge client)"]
-    BR["content/artinova-bridge<br/>(document_start)"]
+  subgraph Artiforce tab
+    APP["Artiforce web app<br/>(libs/bridge client)"]
+    BR["content/artiforce-bridge<br/>(document_start)"]
   end
   subgraph Extension
     SW["background (service worker)<br/>MainBackground"]
@@ -37,7 +37,7 @@ flowchart LR
 | ----------------------- | ----------------------------------------------------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
 | Service worker          | `src/background.ts` → `background/main.background.ts` | Owns all writes: cart, images, badge, purge alarm, message router. | `platform`, feature `services`, `background`, `models`, libs (DOM-free entries). |
 | Supplier content script | `capture/content/supplier-button.ts`                  | Button on product pages; extracts the product on click.            | `platform`, feature roots, `libs/suppliers`. No React.                           |
-| Bridge content script   | `bridge/content/artinova-bridge.ts`                   | Relays the web app's requests, posts `cart.changed`.               | `platform`, feature roots, `libs/bridge`. No React.                              |
+| Bridge content script   | `bridge/content/artiforce-bridge.ts`                  | Relays the web app's requests, posts `cart.changed`.               | `platform`, feature roots, `libs/bridge`. No React.                              |
 | Popup                   | `popup/main.tsx`                                      | « Ma sélection », suppliers, help. Reads state, sends commands.    | `platform`, feature roots, `popup`, React, Phosphor.                             |
 
 ESLint enforces the import rules; `tsconfig.background.json` type-checks the
@@ -78,7 +78,7 @@ service worker restart.
 1. The supplier content script runs at `document_idle` on registry hosts. It
    finds the supplier, checks the page is a product page (adapter or
    structured data + `productPath`), and mounts the button: an unregistered
-   `artinova-btn-<random>` element with `all: initial !important`, a closed
+   `artiforce-btn-<random>` element with `all: initial !important`, a closed
    shadow root and an adopted stylesheet, after the adapter's anchor or
    floating bottom right.
 2. A debounced `MutationObserver` follows SPA navigations and re-injects a

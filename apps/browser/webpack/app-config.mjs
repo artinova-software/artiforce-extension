@@ -15,16 +15,16 @@ export function loadAppConfig(target) {
 
 export function validateAppConfig(config, target) {
   const errors = [];
-  if (!Array.isArray(config.artinovaOrigins) || config.artinovaOrigins.length === 0) {
-    errors.push("artinovaOrigins must be a non-empty array");
+  if (!Array.isArray(config.artiforceOrigins) || config.artiforceOrigins.length === 0) {
+    errors.push("artiforceOrigins must be a non-empty array");
   } else {
-    for (const origin of config.artinovaOrigins) {
+    for (const origin of config.artiforceOrigins) {
       if (!ORIGIN.test(origin)) {
-        errors.push(`artinovaOrigins: "${origin}" is not a bare https (or localhost) origin`);
+        errors.push(`artiforceOrigins: "${origin}" is not a bare https (or localhost) origin`);
       }
     }
   }
-  for (const key of ["artinovaAppUrl", "helpUrl"]) {
+  for (const key of ["artiforceAppUrl", "helpUrl"]) {
     if (typeof config[key] !== "string" || !/^https?:\/\//.test(config[key])) {
       errors.push(`${key} must be an absolute URL`);
     }
@@ -33,7 +33,7 @@ export function validateAppConfig(config, target) {
     errors.push("selectionPath must be a path on the web app, e.g. /stock?selection=extension");
   }
   if (target === "production") {
-    const all = [...(config.artinovaOrigins ?? []), config.artinovaAppUrl];
+    const all = [...(config.artiforceOrigins ?? []), config.artiforceAppUrl];
     for (const value of all) {
       if (/localhost|staging|\.test\b|^http:/.test(value)) {
         errors.push(`production config must not reference "${value}"`);

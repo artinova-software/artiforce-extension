@@ -5,7 +5,7 @@ import { t } from "./t";
 
 describe("t", () => {
   it("reads French messages with substitutions", () => {
-    expect(t("buttonAdd")).toBe("Ajouter à Artinova");
+    expect(t("buttonAdd")).toBe("Ajouter à Artiforce");
     expect(t("popupExpiresInDays", 3)).toBe("Expire dans 3 jours");
   });
 });

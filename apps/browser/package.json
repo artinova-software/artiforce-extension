@@ -1,8 +1,8 @@
 {
-  "name": "@artinova-software/browser-extension",
+  "name": "@artiforce-software/browser-extension",
   "version": "0.0.0",
   "private": true,
-  "description": "Artinova browser extension (Chrome, Edge, Firefox; Manifest V3).",
+  "description": "Artiforce browser extension (Chrome, Edge, Firefox; Manifest V3).",
   "license": "AGPL-3.0-only",
   "type": "module",
   "scripts": {
@@ -20,8 +20,8 @@
     "dist": "node scripts/dist-all.mjs"
   },
   "dependencies": {
-    "@artinova-software/extension-bridge": "workspace:*",
-    "@artinova-software/extension-suppliers": "workspace:*",
+    "@artiforce-software/extension-bridge": "workspace:*",
+    "@artiforce-software/extension-suppliers": "workspace:*",
     "@phosphor-icons/react": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",

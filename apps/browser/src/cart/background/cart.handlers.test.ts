@@ -1,4 +1,4 @@
-import { findSupplierForUrl } from "@artinova-software/extension-suppliers/registry";
+import { findSupplierForUrl } from "@artiforce-software/extension-suppliers/registry";
 import { describe, expect, it, vi } from "vitest";
 
 import type { LogService } from "../../platform/logging/log.service";
@@ -27,7 +27,7 @@ function setup() {
       classifySender(sender, {
         extensionId: chromeFake.id,
         extensionOrigin: `chrome-extension://${chromeFake.id}`,
-        artinovaOrigins: ["https://app.artinova.test"],
+        artiforceOrigins: ["https://app.artiforce.test"],
         isSupplierUrl: (url) => findSupplierForUrl(url) !== undefined,
       }),
   });

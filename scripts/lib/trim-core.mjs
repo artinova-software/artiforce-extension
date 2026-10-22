@@ -151,8 +151,8 @@ export function trimDocument(doc, options) {
     }
     comments.forEach((node) => node.remove());
     for (const element of [root, ...root.querySelectorAll("*")]) {
-      element.removeAttribute("data-artinova-trim-anchor");
-      element.removeAttribute("data-artinova-trim-block");
+      element.removeAttribute("data-artiforce-trim-anchor");
+      element.removeAttribute("data-artiforce-trim-block");
       for (const attribute of [...element.attributes]) {
         if (!keepAttribute.test(attribute.name)) {
           element.removeAttribute(attribute.name);
@@ -191,8 +191,8 @@ function defaultKeep(doc) {
     ),
   );
   if (button) {
-    button.setAttribute("data-artinova-trim-anchor", "");
-    selectors.push("[data-artinova-trim-anchor]");
+    button.setAttribute("data-artiforce-trim-anchor", "");
+    selectors.push("[data-artiforce-trim-anchor]");
     // The product block: the smallest element holding both the title and the
     // button, unless it is most of the page.
     let block = doc.querySelector("h1");
@@ -200,8 +200,8 @@ function defaultKeep(doc) {
       block = block.parentElement;
     }
     if (block && block !== doc.body && block.outerHTML.length < 80000) {
-      block.setAttribute("data-artinova-trim-block", "");
-      selectors.unshift("[data-artinova-trim-block]");
+      block.setAttribute("data-artiforce-trim-block", "");
+      selectors.unshift("[data-artiforce-trim-block]");
     }
   }
   return selectors;

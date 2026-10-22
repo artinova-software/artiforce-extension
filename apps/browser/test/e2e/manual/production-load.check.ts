@@ -46,7 +46,7 @@ test("production build loads cleanly", async () => {
   await popup.screenshot({ path: "test-results/production-popup-suppliers.png" });
   test.info().annotations.push({ type: "state", description: JSON.stringify(state) });
   test.info().annotations.push({ type: "errors", description: JSON.stringify(errors) });
-  expect(state).toMatchObject({ name: "Artinova, produits fournisseurs" });
+  expect(state).toMatchObject({ name: "Artiforce, produits fournisseurs" });
   expect(errors).toEqual([]);
   await context.close();
 });

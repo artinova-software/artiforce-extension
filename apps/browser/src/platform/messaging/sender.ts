@@ -5,7 +5,7 @@ export type SenderContext = {
   extensionId: string;
   /** `chrome-extension://<id>` or `moz-extension://<uuid>`, without a trailing slash. */
   extensionOrigin: string;
-  artinovaOrigins: readonly string[];
+  artiforceOrigins: readonly string[];
   isSupplierUrl(url: string): boolean;
 };
 
@@ -47,7 +47,7 @@ export function classifySender(sender: RuntimeSender, context: SenderContext): S
   ) {
     return SenderKind.UNKNOWN;
   }
-  if (context.artinovaOrigins.includes(origin)) {
+  if (context.artiforceOrigins.includes(origin)) {
     return SenderKind.BRIDGE_CONTENT;
   }
   if (context.isSupplierUrl(sender.url)) {

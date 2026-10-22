@@ -2,7 +2,7 @@ import {
   priceBasisSchema,
   priceBasisSourceSchema,
   unitSchema,
-} from "@artinova-software/extension-suppliers/registry";
+} from "@artiforce-software/extension-suppliers/registry";
 import { z } from "zod";
 
 export const CART_MAX_ITEMS = 100;

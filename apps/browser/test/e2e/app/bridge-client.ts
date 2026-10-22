@@ -1,6 +1,6 @@
-// The fake Artinova web app used by bridge.spec.ts: the real libs/bridge client,
+// The fake Artiforce web app used by bridge.spec.ts: the real libs/bridge client,
 // exposed on window for the test, with every event recorded.
-import { BridgeClient, type BridgeEventData } from "@artinova-software/extension-bridge";
+import { BridgeClient, type BridgeEventData } from "@artiforce-software/extension-bridge";
 
 type Recorded = { event: string; data: unknown };
 
@@ -11,4 +11,4 @@ client.on("cart.changed", (data: BridgeEventData<"cart.changed">) =>
   events.push({ event: "cart.changed", data }),
 );
 
-Object.assign(window, { artinovaBridge: { client, events } });
+Object.assign(window, { artiforceBridge: { client, events } });

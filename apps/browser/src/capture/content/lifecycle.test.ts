@@ -1,11 +1,11 @@
-import { getSupplier } from "@artinova-software/extension-suppliers";
+import { getSupplier } from "@artiforce-software/extension-suppliers";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import { CommandError } from "../../platform/messaging/command";
 import type { sendCommand } from "../../platform/messaging/message-sender";
 import { ButtonLifecycle } from "./lifecycle";
 
-const supplier = getSupplier("artinova-test-shop");
+const supplier = getSupplier("artiforce-test-shop");
 if (supplier === undefined) {
   throw new Error("test supplier missing");
 }
@@ -15,7 +15,7 @@ const PRODUCT = `
     "@type": "Product",
     name: "Perceuse visseuse 18 V",
     sku: "PV-18",
-    image: "https://img.artinova.test/perceuse.jpg",
+    image: "https://img.artiforce.test/perceuse.jpg",
     offers: { price: "89.90", priceCurrency: "EUR" },
   })}</script>
   <h1>Perceuse visseuse 18 V</h1>
@@ -29,7 +29,7 @@ function setPage(path: string, html: string) {
 function hostElement(): HTMLElement | null {
   return (
     ([...document.querySelectorAll("*")].find((element) =>
-      element.tagName.toLowerCase().startsWith("artinova-btn-"),
+      element.tagName.toLowerCase().startsWith("artiforce-btn-"),
     ) as HTMLElement | undefined) ?? null
   );
 }

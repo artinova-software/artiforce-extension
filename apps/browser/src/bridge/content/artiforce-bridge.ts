@@ -1,4 +1,4 @@
-// Content script on the Artinova web app origins (document_start): relays the
+// Content script on the Artiforce web app origins (document_start): relays the
 // web app's bridge requests to the background and posts cart events back.
 // Answers go to location.origin, never "*". No externally_connectable.
 import "../../platform/config/zod-jitless";
@@ -7,7 +7,7 @@ import {
   BRIDGE_CHANNEL,
   BridgeErrorCode,
   SUPPORTED_PROTOCOLS,
-} from "@artinova-software/extension-bridge/wire";
+} from "@artiforce-software/extension-bridge/wire";
 
 import { CART_KEY } from "../../cart/cart.state";
 import { BrowserApi } from "../../platform/browser/browser-api";
@@ -19,7 +19,7 @@ import { GlobalStateProvider } from "../../platform/state/global-state";
 import { BRIDGE_RELAY } from "../bridge.commands";
 import { createMessageGuard, type GuardedRequest } from "./message-guard";
 
-const GUARD = "__artinovaBridge";
+const GUARD = "__artiforceBridge";
 
 const KNOWN_CODES = new Set<string>(Object.values(BridgeErrorCode));
 
@@ -40,7 +40,7 @@ function main(): void {
   }
   scope[GUARD] = true;
   const config = loadAppConfig();
-  const guard = createMessageGuard({ window, allowedOrigins: config.artinovaOrigins });
+  const guard = createMessageGuard({ window, allowedOrigins: config.artiforceOrigins });
   if (!guard.active) {
     return;
   }

@@ -1,4 +1,4 @@
-# ADR-004 — Report the observed price and its basis; margins stay in Artinova
+# ADR-004 — Report the observed price and its basis; margins stay in Artiforce
 
 ## Status
 
@@ -14,11 +14,11 @@ For each product the extension reports the price displayed on the supplier
 page, in integer cents, with the basis it detected: `HT`, `TTC` or `UNKNOWN`,
 and where that basis came from (`adapter`, `page-text`, `structured-data`,
 `registry-default`, `none`). It applies no margin, converts nothing and has no
-options page. Artinova's margin rules apply in the web app and the server.
+options page. Artiforce's margin rules apply in the web app and the server.
 
 ## Rationale
 
-- Margins, VAT rates and rounding are Artinova's business rules; duplicating
+- Margins, VAT rates and rounding are Artiforce's business rules; duplicating
   them in an extension would drift.
 - A wrong basis is the costliest error (a 20 % gap), so doubt is explicit:
   `UNKNOWN` makes the web app ask the user to confirm.

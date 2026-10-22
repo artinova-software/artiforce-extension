@@ -9,5 +9,5 @@ void main.bootstrap();
 
 if (__TARGET__ === "e2e" || __DEV__) {
   // Diagnostics handle for the e2e suite and local debugging; never in production builds.
-  (globalThis as { __artinovaMain?: MainBackground }).__artinovaMain = main;
+  (globalThis as { __artiforceMain?: MainBackground }).__artiforceMain = main;
 }

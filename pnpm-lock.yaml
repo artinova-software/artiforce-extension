@@ -244,10 +244,10 @@ importers:
 
   apps/browser:
     dependencies:
-      '@artinova-software/extension-bridge':
+      '@artiforce-software/extension-bridge':
         specifier: workspace:*
         version: link:../../libs/bridge
-      '@artinova-software/extension-suppliers':
+      '@artiforce-software/extension-suppliers':
         specifier: workspace:*
         version: link:../../libs/suppliers
       '@phosphor-icons/react':

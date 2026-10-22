@@ -19,14 +19,14 @@ run("pnpm", ["run", "lint:firefox"]);
 
 const outDir = join(APP_DIR, "dist");
 mkdirSync(outDir, { recursive: true });
-const source = join(outDir, `artinova-source-${rootVersion()}.zip`);
+const source = join(outDir, `artiforce-source-${rootVersion()}.zip`);
 // git archive: exactly the committed tree, nothing from node_modules or builds.
 run(
   "git",
   [
     "archive",
     "--format=zip",
-    `--prefix=artinova-extension-${rootVersion()}/`,
+    `--prefix=artiforce-extension-${rootVersion()}/`,
     "-o",
     source,
     "HEAD",

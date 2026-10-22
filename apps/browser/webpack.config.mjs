@@ -72,7 +72,7 @@ export default (env = {}) => {
   const entry = {
     "popup/main": "./src/popup/main.tsx",
     "content/supplier-button": "./src/capture/content/supplier-button.ts",
-    "content/artinova-bridge": "./src/bridge/content/artinova-bridge.ts",
+    "content/artiforce-bridge": "./src/bridge/content/artiforce-bridge.ts",
   };
   if (build.target === "e2e") {
     entry["e2e/bridge-client"] = "./test/e2e/app/bridge-client.ts";

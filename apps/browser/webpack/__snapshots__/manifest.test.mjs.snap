@@ -170,10 +170,10 @@ exports[`buildManifest > matches the chrome production snapshot 1`] = `
     {
       "all_frames": false,
       "js": [
-        "content/artinova-bridge.js",
+        "content/artiforce-bridge.js",
       ],
       "matches": [
-        "https://app.artinova.fr/*",
+        "https://app.artiforce.fr/*",
       ],
       "run_at": "document_start",
     },
@@ -386,7 +386,7 @@ exports[`buildManifest > matches the chrome production snapshot 1`] = `
     "alarms",
   ],
   "short_name": "__MSG_extShortName__",
-  "version": "0.1.0",
+  "version": "1.0.0",
 }
 `;
 
@@ -413,7 +413,7 @@ exports[`buildManifest > matches the firefox production snapshot 1`] = `
           "none",
         ],
       },
-      "id": "browser-extension@artinova.fr",
+      "id": "browser-extension@artiforce.fr",
       "strict_min_version": "128.0",
     },
   },
@@ -573,10 +573,10 @@ exports[`buildManifest > matches the firefox production snapshot 1`] = `
     {
       "all_frames": false,
       "js": [
-        "content/artinova-bridge.js",
+        "content/artiforce-bridge.js",
       ],
       "matches": [
-        "https://app.artinova.fr/*",
+        "https://app.artiforce.fr/*",
       ],
       "run_at": "document_start",
     },
@@ -788,6 +788,6 @@ exports[`buildManifest > matches the firefox production snapshot 1`] = `
     "alarms",
   ],
   "short_name": "__MSG_extShortName__",
-  "version": "0.1.0",
+  "version": "1.0.0",
 }
 `;

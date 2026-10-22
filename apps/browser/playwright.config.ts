@@ -1,7 +1,7 @@
 import { defineConfig } from "@playwright/test";
 
 // Loads build/chrome-e2e (pnpm build:e2e) into Chromium; supplier sites and
-// the Artinova web app are simulated with context.route (test/e2e/routes.ts).
+// the Artiforce web app are simulated with context.route (test/e2e/routes.ts).
 export default defineConfig({
   testDir: "test/e2e",
   testMatch: "**/*.spec.ts",

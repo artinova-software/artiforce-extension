@@ -1,4 +1,4 @@
-import { BRIDGE_COMMANDS } from "@artinova-software/extension-bridge/wire";
+import { BRIDGE_COMMANDS } from "@artiforce-software/extension-bridge/wire";
 
 import { defineCommand, SenderKind } from "../platform/messaging/command";
 

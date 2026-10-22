@@ -4,7 +4,7 @@ import type { LogService } from "./log.service";
 export class ConsoleLogService implements LogService {
   constructor(
     private readonly isDev: boolean,
-    private readonly prefix = "[Artinova]",
+    private readonly prefix = "[Artiforce]",
   ) {}
 
   debug(message: string, ...details: unknown[]): void {

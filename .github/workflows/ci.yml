@@ -49,12 +49,12 @@ jobs:
         run: pnpm run build:firefox
 
       - name: Lint the Firefox build (web-ext)
-        run: pnpm --filter @artinova-software/browser-extension run lint:firefox
+        run: pnpm --filter @artiforce-software/browser-extension run lint:firefox
 
       - name: Zip the builds
         run: |
           for browser in chrome edge firefox; do
-            pnpm --filter @artinova-software/browser-extension run zip --browser "$browser" --target production
+            pnpm --filter @artiforce-software/browser-extension run zip --browser "$browser" --target production
           done
 
       - name: Upload the zips
@@ -78,7 +78,7 @@ jobs:
         uses: ./.github/actions/setup-workspace
 
       - name: Install Chromium
-        run: pnpm --filter @artinova-software/browser-extension exec playwright install --with-deps chromium
+        run: pnpm --filter @artiforce-software/browser-extension exec playwright install --with-deps chromium
 
       - name: Playwright
         run: pnpm run test:e2e

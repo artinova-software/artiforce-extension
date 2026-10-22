@@ -1,4 +1,4 @@
-import type { Anchor } from "@artinova-software/extension-suppliers";
+import type { Anchor } from "@artiforce-software/extension-suppliers";
 
 import buttonCss from "./button.css?raw";
 
@@ -22,7 +22,7 @@ function styleSheet(): CSSStyleSheet {
 /** A random, never-registered custom tag: pages cannot target it by name. */
 function hostTagName(): string {
   const random = crypto.getRandomValues(new Uint32Array(2));
-  return `artinova-btn-${random[0]?.toString(36)}${random[1]?.toString(36)}`;
+  return `artiforce-btn-${random[0]?.toString(36)}${random[1]?.toString(36)}`;
 }
 
 /**

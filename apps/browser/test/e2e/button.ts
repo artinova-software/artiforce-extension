@@ -1,8 +1,8 @@
 import type { Locator, Page } from "@playwright/test";
 
-/** The injected host (`artinova-btn-<random>`); its closed shadow root is not reachable. */
+/** The injected host (`artiforce-btn-<random>`); its closed shadow root is not reachable. */
 export function buttonHost(page: Page): Locator {
-  return page.locator("xpath=//*[starts-with(local-name(), 'artinova-btn-')]");
+  return page.locator("xpath=//*[starts-with(local-name(), 'artiforce-btn-')]");
 }
 
 /** Clicks the button inside the closed shadow root by position. */

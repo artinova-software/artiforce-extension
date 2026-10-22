@@ -1,4 +1,4 @@
-import { SUPPORTED_PROTOCOLS } from "@artinova-software/extension-bridge/wire";
+import { SUPPORTED_PROTOCOLS } from "@artiforce-software/extension-bridge/wire";
 
 import type { CartService } from "../../cart/services/cart.service";
 import type { ImageService } from "../../images/services/image.service";

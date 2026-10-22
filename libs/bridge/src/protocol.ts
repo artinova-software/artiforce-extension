@@ -3,7 +3,7 @@ import { z } from "zod";
 import { BRIDGE_COMMAND_NAMES } from "./commands";
 import { BridgeErrorCode } from "./errors";
 
-export const BRIDGE_CHANNEL = "artinova-bridge";
+export const BRIDGE_CHANNEL = "artiforce-bridge";
 /** The protocol this copy speaks. Optional additions stay in v1; breaking changes are v2. */
 export const BRIDGE_PROTOCOL = 1;
 /** Versions the extension answers (both during a transition release). */

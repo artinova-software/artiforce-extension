@@ -1,4 +1,4 @@
-import { getSupplier } from "@artinova-software/extension-suppliers/registry";
+import { getSupplier } from "@artiforce-software/extension-suppliers/registry";
 import { describe, expect, it, vi } from "vitest";
 
 import { product } from "../../../test/fixtures";

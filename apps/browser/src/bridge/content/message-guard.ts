@@ -6,7 +6,7 @@ import {
   type BridgeCommandName,
   bridgeRequestSchema,
   SUPPORTED_PROTOCOLS,
-} from "@artinova-software/extension-bridge/wire";
+} from "@artiforce-software/extension-bridge/wire";
 
 export type GuardedRequest = {
   id: string;

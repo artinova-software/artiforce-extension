@@ -4,7 +4,7 @@ import {
   findAnchor,
   isProductPage,
   type SupplierRecord,
-} from "@artinova-software/extension-suppliers";
+} from "@artiforce-software/extension-suppliers";
 
 import { cartAdd } from "../../cart/cart.commands";
 import { BrowserApi } from "../../platform/browser/browser-api";

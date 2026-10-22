@@ -42,7 +42,7 @@ export function flattenBrowserKeys(value, browser) {
 /**
  * The final manifest: browser keys flattened, version from the repository,
  * content scripts and host permissions generated from the supplier registry,
- * the bridge on the Artinova origins at document_start, and a development key
+ * the bridge on the Artiforce origins at document_start, and a development key
  * (stable extension ID) for the development and e2e targets only.
  */
 export function buildManifest(template, { browser, target, version, appConfig, devKey }) {
@@ -50,7 +50,7 @@ export function buildManifest(template, { browser, target, version, appConfig, d
   manifest.version = version;
   const includeTestOnly = target === "e2e";
   const suppliers = activeSuppliers({ includeTestOnly });
-  const bridgeMatches = [...new Set(appConfig.artinovaOrigins.map(originMatchPattern))].sort();
+  const bridgeMatches = [...new Set(appConfig.artiforceOrigins.map(originMatchPattern))].sort();
   manifest.content_scripts = [
     {
       matches: contentScriptMatches(suppliers),
@@ -60,7 +60,7 @@ export function buildManifest(template, { browser, target, version, appConfig, d
     },
     {
       matches: bridgeMatches,
-      js: ["content/artinova-bridge.js"],
+      js: ["content/artiforce-bridge.js"],
       run_at: "document_start",
       all_frames: false,
     },

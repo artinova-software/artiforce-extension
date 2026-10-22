@@ -2,7 +2,7 @@ import { z } from "zod";
 
 import { priceBasisSchema, priceBasisSourceSchema } from "./price-basis";
 
-/** Units, spelled the way Artinova's catalog normalizes them (`catalog-import.ts`). */
+/** Units, spelled the way Artiforce's catalog normalizes them (`catalog-import.ts`). */
 export const UNITS = ["u", "m", "ml", "m²", "m³", "kg", "l"] as const;
 export const unitSchema = z.enum(UNITS);
 export type Unit = z.infer<typeof unitSchema>;
@@ -10,7 +10,7 @@ export type Unit = z.infer<typeof unitSchema>;
 const httpsUrl = z.url({ protocol: /^https$/ }).max(2048);
 
 /**
- * One product read from a supplier page. Field names follow Artinova's
+ * One product read from a supplier page. Field names follow Artiforce's
  * CatalogItem (`designation`, `supplierCode`, `manufacturerCode`,
  * `ecoContributionCents`); money is integer cents.
  */

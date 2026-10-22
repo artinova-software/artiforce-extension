@@ -5,10 +5,10 @@ before editing; `CLAUDE.md` points here.
 
 ## What this is
 
-The Artinova browser extension (Manifest V3; Chrome, Edge, Firefox). It injects an
-« Ajouter à Artinova » button on supplier product pages, keeps the captured products
+The Artiforce browser extension (Manifest V3; Chrome, Edge, Firefox). It injects an
+« Ajouter à Artiforce » button on supplier product pages, keeps the captured products
 in a local selection (popup, badge, 7-day expiry, 100 items max), and exposes that
-selection to the Artinova web app through a `postMessage` bridge so the web app can
+selection to the Artiforce web app through a `postMessage` bridge so the web app can
 offer « Importer la sélection ».
 
 Architecture follows `bitwarden/clients/apps/browser`: feature folders split by
@@ -19,11 +19,11 @@ See [docs/architecture.md](docs/architecture.md).
 
 ## Layout
 
-| Path             | Package                                  | Role                                                                           |
-| ---------------- | ---------------------------------------- | ------------------------------------------------------------------------------ |
-| `libs/suppliers` | `@artinova-software/extension-suppliers` | Supplier registry, price parsing, product extraction, adapters. Pure TS + DOM. |
-| `libs/bridge`    | `@artinova-software/extension-bridge`    | Bridge wire protocol (zod only). Copied into the web app.                      |
-| `apps/browser`   | `@artinova-software/browser-extension`   | The extension: background, content scripts, popup.                             |
+| Path             | Package                                   | Role                                                                           |
+| ---------------- | ----------------------------------------- | ------------------------------------------------------------------------------ |
+| `libs/suppliers` | `@artiforce-software/extension-suppliers` | Supplier registry, price parsing, product extraction, adapters. Pure TS + DOM. |
+| `libs/bridge`    | `@artiforce-software/extension-bridge`    | Bridge wire protocol (zod only). Copied into the web app.                      |
+| `apps/browser`   | `@artiforce-software/browser-extension`   | The extension: background, content scripts, popup.                             |
 
 Inside `apps/browser/src`, each feature (`cart`, `capture`, `images`, `bridge`,
 `suppliers`) holds `background/`, `content/`, `popup/`, `services/`, `models/` as
@@ -32,8 +32,8 @@ logging, i18n, config, concurrency).
 
 ## Hard rules
 
-1. **The extension never calls the Artinova API.** No auth, no tokens, no fetch to
-   `*.artinova.fr`. The web app reads the selection through the bridge and writes
+1. **The extension never calls the Artiforce API.** No auth, no tokens, no fetch to
+   `*.artiforce.fr`. The web app reads the selection through the bridge and writes
    with its own session ([ADR-002](docs/adr/ADR-002-no-api-calls-web-app-imports.md)).
 2. **Zod at every boundary**: messages, bridge payloads, storage reads, config,
    extracted products. A storage value that fails its schema falls back to the
@@ -54,7 +54,7 @@ logging, i18n, config, concurrency).
 8. **Content scripts are classic scripts**: one self-contained IIFE per entry, no
    dynamic `import()`. `ForbiddenModulesPlugin` fails the build otherwise.
 9. **Money is integer cents.** The extension reports the observed price and its
-   basis (`HT`, `TTC`, `UNKNOWN`); margins are Artinova's job
+   basis (`HT`, `TTC`, `UNKNOWN`); margins are Artiforce's job
    ([ADR-004](docs/adr/ADR-004-observed-price-and-basis.md)).
 10. **Images travel as data URLs** downloaded by the service worker, only from hosts
     declared for the supplier ([ADR-003](docs/adr/ADR-003-storage-local-data-url-images.md)).

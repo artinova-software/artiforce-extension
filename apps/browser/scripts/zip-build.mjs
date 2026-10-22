@@ -1,5 +1,5 @@
 // Zips one build folder: build/<browser>-<target>/ to
-// dist/artinova-<browser>-<target>-<version>.zip (store upload format).
+// dist/artiforce-<browser>-<target>-<version>.zip (store upload format).
 import { mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import { parseArgs } from "node:util";
@@ -33,7 +33,7 @@ export function zipBuild({ browser, target }) {
   }
   const outDir = join(APP_DIR, "dist");
   mkdirSync(outDir, { recursive: true });
-  const outFile = join(outDir, `artinova-${browser}-${target}-${build.version}.zip`);
+  const outFile = join(outDir, `artiforce-${browser}-${target}-${build.version}.zip`);
   writeFileSync(outFile, zipSync(files, { level: 9 }));
   return outFile;
 }

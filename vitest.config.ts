@@ -33,10 +33,10 @@ export default defineConfig({
           __TARGET__: JSON.stringify("e2e"),
           __VERSION__: JSON.stringify("0.1.0"),
           __APP_CONFIG__: JSON.stringify({
-            artinovaOrigins: ["https://app.artinova.test", "http://localhost:3000"],
-            artinovaAppUrl: "https://app.artinova.test",
+            artiforceOrigins: ["https://app.artiforce.test", "http://localhost:3000"],
+            artiforceAppUrl: "https://app.artiforce.test",
             selectionPath: "/stock?selection=extension",
-            helpUrl: "https://artinova.fr/aide",
+            helpUrl: "https://artiforce.fr/aide",
           }),
         },
       },

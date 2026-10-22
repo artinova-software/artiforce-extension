@@ -27,7 +27,7 @@ choices answer the problems we have: classic-script content scripts, a service
 worker that can stop at any time, per-browser manifests, store reviews. Copying
 a proven layout is cheaper than inventing one. TypeScript 7 has no JavaScript
 API, so loaders that call it (`ts-loader`) are out; swc is fast and already
-used in the Artinova monorepo.
+used in the Artiforce monorepo.
 
 ## Consequences
 

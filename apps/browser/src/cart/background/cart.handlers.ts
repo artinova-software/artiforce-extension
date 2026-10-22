@@ -1,4 +1,4 @@
-import type { SupplierRecord } from "@artinova-software/extension-suppliers/registry";
+import type { SupplierRecord } from "@artiforce-software/extension-suppliers/registry";
 
 import { CommandError } from "../../platform/messaging/command";
 import type { MessageRouter } from "../../platform/messaging/message-router";

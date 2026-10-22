@@ -1,4 +1,4 @@
-import type { PriceBasis } from "@artinova-software/extension-suppliers/registry";
+import type { PriceBasis } from "@artiforce-software/extension-suppliers/registry";
 
 import { t } from "../platform/i18n/t";
 

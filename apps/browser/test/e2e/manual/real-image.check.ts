@@ -7,7 +7,7 @@ test("real Leroy Merlin image is under 300 KB after resizing", async ({ serviceW
   const result = await serviceWorker.evaluate(async () => {
     const main = (
       globalThis as unknown as {
-        __artinovaMain: {
+        __artiforceMain: {
           images: {
             deps: {
               codec: {
@@ -20,7 +20,7 @@ test("real Leroy Merlin image is under 300 KB after resizing", async ({ serviceW
           };
         };
       }
-    ).__artinovaMain;
+    ).__artiforceMain;
     const response = await fetch("https://media.adeo.com/media/3267982/media.jpg", {
       credentials: "omit",
     });

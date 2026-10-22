@@ -1,13 +1,13 @@
-// Content script: « Ajouter à Artinova » on supplier product pages.
+// Content script: « Ajouter à Artiforce » on supplier product pages.
 // A classic script (IIFE): no dynamic import, no framework.
 import "../../platform/config/zod-jitless";
 
-import { findSupplierForUrl } from "@artinova-software/extension-suppliers";
+import { findSupplierForUrl } from "@artiforce-software/extension-suppliers";
 
 import { BrowserApi } from "../../platform/browser/browser-api";
 import { ButtonLifecycle } from "./lifecycle";
 
-const GUARD = "__artinovaSupplierButton";
+const GUARD = "__artiforceSupplierButton";
 
 function main(): void {
   const scope = window as unknown as Record<string, unknown>;

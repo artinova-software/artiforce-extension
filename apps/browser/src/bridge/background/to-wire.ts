@@ -1,4 +1,4 @@
-import type { BridgeCartItem } from "@artinova-software/extension-bridge/wire";
+import type { BridgeCartItem } from "@artiforce-software/extension-bridge/wire";
 
 import type { CartItem } from "../../cart/models/cart-item";
 

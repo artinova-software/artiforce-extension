@@ -1,8 +1,8 @@
 {
-  "name": "@artinova-software/extension-bridge",
+  "name": "@artiforce-software/extension-bridge",
   "version": "0.0.0",
   "private": true,
-  "description": "Wire protocol between the Artinova web app and the browser extension. Vendored by the web app.",
+  "description": "Wire protocol between the Artiforce web app and the browser extension. Vendored by the web app.",
   "license": "AGPL-3.0-only",
   "type": "module",
   "exports": {

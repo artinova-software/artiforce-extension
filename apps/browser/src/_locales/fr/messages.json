@@ -1,20 +1,20 @@
 {
   "extName": {
-    "message": "Artinova, produits fournisseurs",
+    "message": "Artiforce, produits fournisseurs",
     "description": "Extension name in the stores and chrome://extensions (40 characters max)."
   },
   "extShortName": {
-    "message": "Artinova"
+    "message": "Artiforce"
   },
   "extDescription": {
-    "message": "Ajoutez des produits depuis les sites de vos fournisseurs et importez-les dans vos devis Artinova.",
+    "message": "Ajoutez des produits depuis les sites de vos fournisseurs et importez-les dans vos devis Artiforce.",
     "description": "Store and extension list description (132 characters max)."
   },
   "actionTitle": {
-    "message": "Ma sélection Artinova"
+    "message": "Ma sélection Artiforce"
   },
   "buttonAdd": {
-    "message": "Ajouter à Artinova"
+    "message": "Ajouter à Artiforce"
   },
   "buttonAdding": {
     "message": "Ajout en cours…"
@@ -32,7 +32,7 @@
     "message": "Votre sélection est pleine (100 produits)."
   },
   "buttonReload": {
-    "message": "Rechargez la page pour utiliser Artinova."
+    "message": "Rechargez la page pour utiliser Artiforce."
   },
   "buttonOpenSelection": {
     "message": "Voir ma sélection"
@@ -53,7 +53,7 @@
     "message": "Votre sélection est vide"
   },
   "popupEmptyBody": {
-    "message": "Sur une fiche produit d'un fournisseur supporté, cliquez sur « Ajouter à Artinova »."
+    "message": "Sur une fiche produit d'un fournisseur supporté, cliquez sur « Ajouter à Artiforce »."
   },
   "popupEmptyLink": {
     "message": "Voir les fournisseurs supportés"
@@ -137,11 +137,11 @@
       }
     }
   },
-  "popupOpenArtinova": {
-    "message": "Ouvrir ma sélection dans Artinova"
+  "popupOpenArtiforce": {
+    "message": "Ouvrir ma sélection dans Artiforce"
   },
   "popupImportHint": {
-    "message": "Votre sélection s'ouvre dans Stock, sur Artinova : ajoutez-la à un devis ou à la Bibliothèque, triez-la ou supprimez des produits."
+    "message": "Votre sélection s'ouvre dans Stock, sur Artiforce : ajoutez-la à un devis ou à la Bibliothèque, triez-la ou supprimez des produits."
   },
   "popupClear": {
     "message": "Vider la sélection"
@@ -171,7 +171,7 @@
     "message": "Pas de photo"
   },
   "popupHelpCenter": {
-    "message": "Centre d'aide Artinova"
+    "message": "Centre d'aide Artiforce"
   },
   "popupVersion": {
     "message": "Version $VERSION$",
@@ -182,7 +182,7 @@
     }
   },
   "popupPrivacy": {
-    "message": "Vos produits restent dans votre navigateur jusqu'à leur import dans Artinova."
+    "message": "Vos produits restent dans votre navigateur jusqu'à leur import dans Artiforce."
   },
   "popupError": {
     "message": "Une erreur est survenue. Fermez puis rouvrez la fenêtre."

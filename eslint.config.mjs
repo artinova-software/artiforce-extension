@@ -20,7 +20,7 @@ function restrictImports(patterns) {
 }
 
 const noApps = {
-  group: ["apps/*", "**/apps/*", "@artinova-software/browser-extension"],
+  group: ["apps/*", "**/apps/*", "@artiforce-software/browser-extension"],
   message: "Libraries must not import application code.",
 };
 

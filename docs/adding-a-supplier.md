@@ -89,5 +89,5 @@ the permission change in its snapshot.
 pnpm dev:chrome
 ```
 
-Reload the extension, open a product page, click « Ajouter à Artinova », and
+Reload the extension, open a product page, click « Ajouter à Artiforce », and
 check the popup.

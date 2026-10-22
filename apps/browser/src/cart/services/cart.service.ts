@@ -1,7 +1,7 @@
 import type {
   CapturedProduct,
   SupplierRecord,
-} from "@artinova-software/extension-suppliers/registry";
+} from "@artiforce-software/extension-suppliers/registry";
 
 import { CommandError } from "../../platform/messaging/command";
 import type { GlobalState } from "../../platform/state/global-state";

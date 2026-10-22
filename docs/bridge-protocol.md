@@ -1,7 +1,7 @@
 # Bridge protocol (v1)
 
-How the Artinova web app reads the extension's selection. The extension never
-calls the Artinova API ([ADR-002](adr/ADR-002-no-api-calls-web-app-imports.md)):
+How the Artiforce web app reads the extension's selection. The extension never
+calls the Artiforce API ([ADR-002](adr/ADR-002-no-api-calls-web-app-imports.md)):
 the web app asks the extension for the selection over `window.postMessage`, shows
 a controlled preview, then writes with its own session.
 
@@ -9,12 +9,12 @@ Source of truth: [`libs/bridge/src`](../libs/bridge/src). The web app **copies**
 that folder into its code (no npm package) with a header naming the commit:
 
 ```ts
-// Copied from artinova-software/artinova-extension@<sha> libs/bridge/src. Do not edit here.
+// Copied from artiforce-software/artiforce-extension@<sha> libs/bridge/src. Do not edit here.
 ```
 
 ## Entry point in the web app
 
-« Ouvrir ma sélection dans Artinova » in the popup opens
+« Ouvrir ma sélection dans Artiforce » in the popup opens
 `<app>/stock?selection=extension` (`selectionPath` in
 `apps/browser/config/base.json`). The web app shows the selection there: add
 items to a quote or to the Library, sort them, delete them. Deleting from the
@@ -26,14 +26,14 @@ app as `cart.changed`. Both sides stay in sync without polling.
 ```
 web app page ──postMessage(request, location.origin)──▶ bridge content script
                                                         (document_start, top frame,
-                                                         Artinova origins only)
+                                                         Artiforce origins only)
 bridge content script ──runtime.sendMessage──▶ service worker (sender must be
                                                a bridge content script)
 web app page ◀──postMessage(response | event, location.origin)── bridge content script
 ```
 
-- The content script is declared in the manifest on `artinovaOrigins`
-  (`https://app.artinova.fr`, `https://staging.artinova.fr`,
+- The content script is declared in the manifest on `artiforceOrigins`
+  (`https://app.artiforce.fr`, `https://staging.artiforce.fr`,
   `http://localhost:3000` depending on the build target). There is no
   `externally_connectable`.
 - Messages are only ever posted to `location.origin`, never `"*"`.
@@ -42,7 +42,7 @@ web app page ◀──postMessage(response | event, location.origin)── bridg
 
 ## Envelope
 
-Every message carries `channel: "artinova-bridge"` and `protocol: 1`.
+Every message carries `channel: "artiforce-bridge"` and `protocol: 1`.
 
 ```ts
 // web app → extension
@@ -91,7 +91,7 @@ Requests are strict objects: an unknown key is `INVALID_REQUEST`.
 
 The price is the one displayed on the supplier page, with the basis the
 extension detected ([ADR-004](adr/ADR-004-observed-price-and-basis.md)). The
-web app applies Artinova's margin rules, asks to confirm `UNKNOWN` bases, and
+web app applies Artiforce's margin rules, asks to confirm `UNKNOWN` bases, and
 shows « Prix relevé le … ». There is no quantity: the preview sets it.
 
 ## Events
@@ -148,7 +148,7 @@ const { revision, items } = await bridge.request("getCart", {});
 const { images } = await bridge.request("getImages", {
   itemIds: items.slice(0, 10).map((i) => i.id),
 });
-// …preview, confirm, write with the Artinova SDK…
+// …preview, confirm, write with the Artiforce SDK…
 await bridge.request("removeItems", {
   items: imported.map(({ id, observedAt }) => ({ id, observedAt })),
 });

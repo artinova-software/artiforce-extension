@@ -33,7 +33,7 @@
   "__chrome__minimum_chrome_version": "120",
   "__firefox__browser_specific_settings": {
     "gecko": {
-      "id": "browser-extension@artinova.fr",
+      "id": "browser-extension@artiforce.fr",
       "strict_min_version": "128.0",
       "data_collection_permissions": {
         "required": ["none"]

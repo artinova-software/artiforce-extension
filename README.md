@@ -1,11 +1,11 @@
-# Artinova browser extension
+# Artiforce browser extension
 
 Add products from supplier websites (Leroy Merlin, Cedeo, Point.P, Rexel…) to a local
-selection, then import that selection into an Artinova quote or into the Library
+selection, then import that selection into an Artiforce quote or into the Library
 with « Importer la sélection ».
 
 - Manifest V3 for Chrome, Edge and Firefox.
-- The extension never talks to the Artinova API: the web app reads the selection
+- The extension never talks to the Artiforce API: the web app reads the selection
   through a `postMessage` bridge and writes with its own session.
 - Rules and layout: [AGENTS.md](AGENTS.md). Architecture: [docs/architecture.md](docs/architecture.md).
 
@@ -68,7 +68,7 @@ Many suppliers block automated browsers (Leroy Merlin, Castorama, Cedeo…):
 check those by hand with `pnpm dev:chrome`.
 
 ```bash
-pnpm --filter @artinova-software/browser-extension exec playwright test --config test/e2e/manual/playwright.manual.config.ts
+pnpm --filter @artiforce-software/browser-extension exec playwright test --config test/e2e/manual/playwright.manual.config.ts
 ```
 
 ## Package for the stores
@@ -77,7 +77,7 @@ pnpm --filter @artinova-software/browser-extension exec playwright test --config
 pnpm dist
 ```
 
-Produces `apps/browser/dist/artinova-<browser>-production-<version>.zip` for
+Produces `apps/browser/dist/artiforce-<browser>-production-<version>.zip` for
 Chrome, Edge and Firefox plus a source archive for AMO. See
 [docs/release.md](docs/release.md) and [docs/store-listing.md](docs/store-listing.md).
 

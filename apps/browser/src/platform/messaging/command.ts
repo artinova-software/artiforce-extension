@@ -6,7 +6,7 @@ export const SenderKind = {
   EXTENSION_PAGE: "extension-page",
   /** The button content script, top frame of a registered supplier page. */
   SUPPLIER_CONTENT: "supplier-content",
-  /** The bridge content script, top frame of an Artinova origin. */
+  /** The bridge content script, top frame of an Artiforce origin. */
   BRIDGE_CONTENT: "bridge-content",
   UNKNOWN: "unknown",
 } as const;
@@ -39,7 +39,7 @@ export const MessagingErrorCode = {
   EXTENSION_RELOADED: "EXTENSION_RELOADED",
 } as const;
 
-export const CHANNEL = "artinova-extension";
+export const CHANNEL = "artiforce-extension";
 
 export const requestEnvelopeSchema = z.strictObject({
   channel: z.literal(CHANNEL),

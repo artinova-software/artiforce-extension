@@ -18,7 +18,7 @@ const build = resolveBuild({ browser: "chrome", target: "development" });
 const key = readFileSync(join(APP_DIR, "config", "dev-manifest-key.txt"), "utf8").trim();
 
 console.log(`
-Artinova extension, development build (watch mode)
+Artiforce extension, development build (watch mode)
 
   1. Open chrome://extensions and enable Developer mode.
   2. Load unpacked: ${relative(process.cwd(), build.outDir) || build.outDir}

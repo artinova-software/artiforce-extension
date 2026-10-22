@@ -2,7 +2,7 @@ import {
   activeSuppliers,
   foldForSearch,
   type SupplierRecord,
-} from "@artinova-software/extension-suppliers/registry";
+} from "@artiforce-software/extension-suppliers/registry";
 import { ArrowSquareOut, MagnifyingGlass } from "@phosphor-icons/react";
 import { useMemo, useState } from "react";
 

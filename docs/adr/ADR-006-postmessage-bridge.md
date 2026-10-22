@@ -10,7 +10,7 @@ Accepted.
 
 ## Decision
 
-A content script injected at `document_start` on the Artinova origins relays
+A content script injected at `document_start` on the Artiforce origins relays
 the web app's `window.postMessage` requests to the service worker and posts
 the answers back to `location.origin`. The protocol (v1) lives in
 `libs/bridge`, which the web app copies. There is no `externally_connectable`.
@@ -23,7 +23,7 @@ the answers back to `location.origin`. The protocol (v1) lives in
 
 ## Consequences
 
-- Any script running on an Artinova origin can talk to the bridge. The data is
+- Any script running on an Artiforce origin can talk to the bridge. The data is
   low-sensitivity (supplier products and prices the user chose), deletions are
   guarded by `revision` and `observedAt`, the bridge checks frame, origin,
   trust, schema and rate, and the web app treats every answer as untrusted.

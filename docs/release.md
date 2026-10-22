@@ -26,19 +26,19 @@ pnpm dist
 
 Outputs in `apps/browser/dist/`:
 
-| File                                        | For                                          |
-| ------------------------------------------- | -------------------------------------------- |
-| `artinova-chrome-production-<version>.zip`  | Chrome Web Store                             |
-| `artinova-edge-production-<version>.zip`    | Microsoft Edge Add-ons                       |
-| `artinova-firefox-production-<version>.zip` | addons.mozilla.org (AMO)                     |
-| `artinova-source-<version>.zip`             | AMO source review (`git archive` of the tag) |
+| File                                         | For                                          |
+| -------------------------------------------- | -------------------------------------------- |
+| `artiforce-chrome-production-<version>.zip`  | Chrome Web Store                             |
+| `artiforce-edge-production-<version>.zip`    | Microsoft Edge Add-ons                       |
+| `artiforce-firefox-production-<version>.zip` | addons.mozilla.org (AMO)                     |
+| `artiforce-source-<version>.zip`             | AMO source review (`git archive` of the tag) |
 
 ## Upload to the stores (manual)
 
 Texts, permission justifications and privacy answers:
 [store-listing.md](store-listing.md).
 
-- **Chrome Web Store** (developer dashboard, Artinova publisher account):
+- **Chrome Web Store** (developer dashboard, Artiforce publisher account):
   upload the Chrome zip, check the listing, submit. Host permission changes
   trigger an in-depth review: say so in the notes to the reviewer.
 - **Edge Add-ons** (Partner Center): upload the Edge zip, same listing.

@@ -1,4 +1,4 @@
-import { capturedProductSchema } from "@artinova-software/extension-suppliers/registry";
+import { capturedProductSchema } from "@artiforce-software/extension-suppliers/registry";
 import { z } from "zod";
 
 import { defineCommand, SenderKind } from "../platform/messaging/command";

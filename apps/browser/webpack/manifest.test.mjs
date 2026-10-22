@@ -8,7 +8,7 @@ import {
   listedSuppliers as tsListedSuppliers,
   contentScriptMatches as tsContentScriptMatches,
   hostPermissions as tsHostPermissions,
-} from "@artinova-software/extension-suppliers";
+} from "@artiforce-software/extension-suppliers";
 import { loadAppConfig, originMatchPattern, validateAppConfig } from "./app-config.mjs";
 import { APP_DIR, rootVersion } from "./build-config.mjs";
 import { buildManifest, flattenBrowserKeys } from "./manifest.mjs";
@@ -49,7 +49,7 @@ describe("buildManifest", () => {
     });
     expect(manifestFor("firefox", "production").background).toEqual({ scripts: ["background.js"] });
     expect(manifestFor("firefox", "production").browser_specific_settings.gecko.id).toBe(
-      "browser-extension@artinova.fr",
+      "browser-extension@artiforce.fr",
     );
   });
 
@@ -83,15 +83,15 @@ describe("buildManifest", () => {
   it("adds the development key and the test shop to the e2e target", () => {
     const manifest = manifestFor("chrome", "e2e");
     expect(manifest.key).toBe("DEV-KEY");
-    expect(manifest.content_scripts[0].matches).toContain("https://shop.artinova.test/*");
-    expect(manifest.host_permissions).toContain("https://img.artinova.test/*");
-    expect(manifest.content_scripts[1].matches).toEqual(["https://app.artinova.test/*"]);
+    expect(manifest.content_scripts[0].matches).toContain("https://shop.artiforce.test/*");
+    expect(manifest.host_permissions).toContain("https://img.artiforce.test/*");
+    expect(manifest.content_scripts[1].matches).toEqual(["https://app.artiforce.test/*"]);
   });
 
-  it("loads the bridge at document_start on the Artinova origins", () => {
+  it("loads the bridge at document_start on the Artiforce origins", () => {
     const bridge = manifestFor("chrome", "development").content_scripts[1];
     expect(bridge.run_at).toBe("document_start");
-    expect(bridge.matches).toEqual(["http://localhost/*", "https://staging.artinova.fr/*"]);
+    expect(bridge.matches).toEqual(["http://localhost/*", "https://staging.artiforce.fr/*"]);
   });
 
   it("takes the version from the root package.json", () => {
@@ -131,8 +131,8 @@ describe("app config", () => {
     expect(() =>
       validateAppConfig(
         {
-          artinovaOrigins: ["http://localhost:3000"],
-          artinovaAppUrl: "http://localhost:3000",
+          artiforceOrigins: ["http://localhost:3000"],
+          artiforceAppUrl: "http://localhost:3000",
           selectionPath: "/stock?selection=extension",
           helpUrl: "https://a.fr",
         },

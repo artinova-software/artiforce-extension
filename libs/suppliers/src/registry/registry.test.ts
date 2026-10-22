@@ -72,10 +72,10 @@ describe("findSupplierForUrl", () => {
   it("ignores other hosts, http and test suppliers by default", () => {
     expect(findSupplierForUrl("https://leroymerlin.fr.evil.example/")).toBeUndefined();
     expect(findSupplierForUrl("http://www.leroymerlin.fr/")).toBeUndefined();
-    expect(findSupplierForUrl("https://shop.artinova.test/produits/1")).toBeUndefined();
+    expect(findSupplierForUrl("https://shop.artiforce.test/produits/1")).toBeUndefined();
     expect(
-      findSupplierForUrl("https://shop.artinova.test/produits/1", { includeTestOnly: true })?.id,
-    ).toBe("artinova-test-shop");
+      findSupplierForUrl("https://shop.artiforce.test/produits/1", { includeTestOnly: true })?.id,
+    ).toBe("artiforce-test-shop");
     expect(findSupplierForUrl("not a url")).toBeUndefined();
   });
 });

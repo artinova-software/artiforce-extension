@@ -28,12 +28,12 @@ test.describe("popup", () => {
     await expect(row).toContainText("Expire dans 7 jours");
     await popup.screenshot({ path: "test-results/popup-selection.png" });
 
-    // « Ouvrir ma sélection dans Artinova » lands on the Stock page with the selection.
+    // « Ouvrir ma sélection dans Artiforce » lands on the Stock page with the selection.
     const [stock] = await Promise.all([
       context.waitForEvent("page"),
-      popup.getByRole("button", { name: "Ouvrir ma sélection dans Artinova" }).click(),
+      popup.getByRole("button", { name: "Ouvrir ma sélection dans Artiforce" }).click(),
     ]);
-    await expect(stock).toHaveURL("https://app.artinova.test/stock?selection=extension");
+    await expect(stock).toHaveURL("https://app.artiforce.test/stock?selection=extension");
     await stock.close();
 
     await popup
@@ -70,7 +70,7 @@ test.describe("popup", () => {
     await popup.getByRole("button", { name: "Aide" }).click();
     await expect(
       popup.getByText(
-        "Vos produits restent dans votre navigateur jusqu'à leur import dans Artinova.",
+        "Vos produits restent dans votre navigateur jusqu'à leur import dans Artiforce.",
       ),
     ).toBeVisible();
     await expect(popup.getByText(/^Version \d+\.\d+\.\d+$/)).toBeVisible();

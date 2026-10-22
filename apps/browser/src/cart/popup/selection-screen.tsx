@@ -66,7 +66,7 @@ export function SelectionScreen() {
       <footer className="flex flex-col gap-3 border-t border-line bg-surface px-4 py-3">
         <Button onClick={() => void BrowserApi.createTab(selectionUrl(loadAppConfig()))}>
           <ArrowSquareOut size={16} weight="bold" aria-hidden="true" />
-          {t("popupOpenArtinova")}
+          {t("popupOpenArtiforce")}
         </Button>
         <p className="text-xs text-ink-muted">{t("popupImportHint")}</p>
         {items.length > 0 && (

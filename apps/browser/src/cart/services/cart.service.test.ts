@@ -1,4 +1,4 @@
-import type { SupplierRecord } from "@artinova-software/extension-suppliers/registry";
+import type { SupplierRecord } from "@artiforce-software/extension-suppliers/registry";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import type { LogService } from "../../platform/logging/log.service";
