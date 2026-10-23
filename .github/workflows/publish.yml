@@ -1,0 +1,339 @@
+name: Publish to the stores
+
+# Sends the packages of one GitHub release to the stores and submits each for
+# review: Chrome Web Store, Firefox (AMO), Safari (Mac App Store) and, when
+# listed, Edge Add-ons. Called by release.yml right after the release; run it
+# by hand to retry a store that failed, with the same tag (docs/release.md).
+#
+# Every store job runs in the `production` GitHub Environment, which holds the
+# store credentials and requires a reviewer: the run pauses before anything
+# leaves GitHub, and one approval releases every store job of the run, like
+# "Release to production" on the Artiforce platform. The stores still review
+# each version themselves; the version goes live when they approve it.
+#
+# The packages are the release assets, not a rebuild: what the stores receive
+# is byte for byte what the release page lists. Store scripts come from this
+# workflow's own commit, so an older tag can still be published.
+
+on:
+  workflow_call:
+    inputs:
+      tag:
+        type: string
+        required: true
+      stores:
+        type: string
+        default: chrome,firefox,safari
+      release_notes:
+        type: string
+        default: Corrections et améliorations.
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag, e.g. v1.2.3"
+        type: string
+        required: true
+      stores:
+        description: "Comma separated: chrome, edge, firefox, safari"
+        type: string
+        default: chrome,firefox,safari
+      release_notes:
+        description: "What's new, in French (AMO and the App Store)"
+        type: string
+        default: Corrections et améliorations.
+
+concurrency:
+  group: publish-${{ inputs.tag }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    name: Check the release
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      version: ${{ steps.release.outputs.version }}
+      stores: ${{ steps.stores.outputs.stores }}
+    steps:
+      - name: Validate the stores
+        id: stores
+        env:
+          STORES: ${{ inputs.stores }}
+        run: |
+          set -euo pipefail
+          stores="$(echo "$STORES" | tr -d ' ')"
+          for store in ${stores//,/ }; do
+            case "$store" in
+              chrome | edge | firefox | safari) ;;
+              *)
+                echo "::error::Unknown store \"$store\" (expected chrome, edge, firefox, safari)."
+                exit 1
+                ;;
+            esac
+          done
+          echo "stores=,$stores," >> "$GITHUB_OUTPUT"
+
+      - name: Check the tag and its assets
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          STORES: ${{ steps.stores.outputs.stores }}
+        run: |
+          set -euo pipefail
+          if ! [[ "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::\"$TAG\" is not a release tag (vX.Y.Z)."
+            exit 1
+          fi
+          version="${TAG#v}"
+          assets="$(gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name')"
+          required=()
+          for store in ${STORES//,/ }; do
+            required+=("artiforce-$store-production-$version.zip")
+          done
+          if [[ "$STORES" == *,firefox,* ]]; then
+            required+=("artiforce-source-$version.zip")
+          fi
+          missing=0
+          for file in "${required[@]}"; do
+            if ! grep -qxF "$file" <<< "$assets"; then
+              echo "::error::Release $TAG has no $file."
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+  chrome:
+    name: Chrome Web Store
+    needs: prepare
+    if: contains(needs.prepare.outputs.stores, ',chrome,')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment: production
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up the workspace
+        uses: ./.github/actions/setup-workspace
+
+      - name: Download the package
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+        run: gh release download "$TAG" --dir "$RUNNER_TEMP/release" --pattern "artiforce-chrome-production-$VERSION.zip"
+
+      - name: Upload and submit for review
+        env:
+          CWS_PUBLISHER_ID: ${{ vars.CWS_PUBLISHER_ID }}
+          CWS_ITEM_ID: ${{ vars.CWS_ITEM_ID }}
+          CWS_SERVICE_ACCOUNT_KEY: ${{ secrets.CWS_SERVICE_ACCOUNT_KEY }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+        run: node apps/browser/scripts/publish-store.mjs chrome --zip "$RUNNER_TEMP/release/artiforce-chrome-production-$VERSION.zip"
+
+  edge:
+    name: Edge Add-ons
+    needs: prepare
+    if: contains(needs.prepare.outputs.stores, ',edge,')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment: production
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up the workspace
+        uses: ./.github/actions/setup-workspace
+
+      - name: Download the package
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+        run: gh release download "$TAG" --dir "$RUNNER_TEMP/release" --pattern "artiforce-edge-production-$VERSION.zip"
+
+      - name: Upload and submit for certification
+        env:
+          EDGE_PRODUCT_ID: ${{ vars.EDGE_PRODUCT_ID }}
+          EDGE_CLIENT_ID: ${{ secrets.EDGE_CLIENT_ID }}
+          EDGE_API_KEY: ${{ secrets.EDGE_API_KEY }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+        run: node apps/browser/scripts/publish-store.mjs edge --zip "$RUNNER_TEMP/release/artiforce-edge-production-$VERSION.zip"
+
+  firefox:
+    name: Firefox (AMO)
+    needs: prepare
+    if: contains(needs.prepare.outputs.stores, ',firefox,')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment: production
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up the workspace
+        uses: ./.github/actions/setup-workspace
+
+      - name: Download the package and the source archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          gh release download "$TAG" --dir "$RUNNER_TEMP/release" \
+            --pattern "artiforce-firefox-production-$VERSION.zip" \
+            --pattern "artiforce-source-$VERSION.zip"
+
+      - name: Submit for review
+        env:
+          AMO_JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
+          AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+          RELEASE_NOTES: ${{ inputs.release_notes }}
+        run: |
+          node apps/browser/scripts/publish-store.mjs firefox \
+            --zip "$RUNNER_TEMP/release/artiforce-firefox-production-$VERSION.zip" \
+            --source "$RUNNER_TEMP/release/artiforce-source-$VERSION.zip" \
+            --notes "$RELEASE_NOTES"
+
+  # Safari Web Extensions ship inside a macOS app: the Xcode project in
+  # apps/safari wraps apps/browser/build/safari-production (the release zip,
+  # unpacked there), xcodebuild archives and signs it with the App Store
+  # Connect API key (automatic, cloud-managed signing), uploads it, and
+  # fastlane attaches the build to a new App Store version and submits it.
+  safari:
+    name: Safari (Mac App Store)
+    needs: prepare
+    if: contains(needs.prepare.outputs.stores, ',safari,')
+    runs-on: macos-26
+    timeout-minutes: 90
+    environment: production
+    env:
+      APP_BUNDLE_ID: fr.artiforce.Artiforce
+      PROJECT: apps/safari/Artiforce/Artiforce.xcodeproj
+      VERSION: ${{ needs.prepare.outputs.version }}
+    steps:
+      # The Xcode project of the release itself, so the app matches the tag.
+      - name: Check out the tag
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ inputs.tag }}
+
+      - name: Unpack the Safari package where the Xcode project expects it
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          set -euo pipefail
+          gh release download "$TAG" --dir "$RUNNER_TEMP/release" --pattern "artiforce-safari-production-$VERSION.zip"
+          mkdir -p apps/browser/build/safari-production
+          unzip -q "$RUNNER_TEMP/release/artiforce-safari-production-$VERSION.zip" -d apps/browser/build/safari-production
+
+      # The newest stable Xcode of the image: App Store Connect only accepts
+      # builds made with a recent SDK, and the project format follows Xcode.
+      - name: Select Xcode
+        run: |
+          set -euo pipefail
+          xcode="$(printf '%s\n' /Applications/Xcode_*.app | grep -iv beta | sort -V | tail -1)"
+          sudo xcode-select --switch "$xcode"
+          xcodebuild -version
+
+      - name: Write the App Store Connect API key
+        env:
+          PRIVATE_KEY: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY }}
+          KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          umask 077
+          printf '%s\n' "$PRIVATE_KEY" > "$RUNNER_TEMP/AuthKey.p8"
+          jq -n --arg key_id "$KEY_ID" --arg issuer_id "$ISSUER_ID" --rawfile key "$RUNNER_TEMP/AuthKey.p8" \
+            '{key_id: $key_id, issuer_id: $issuer_id, key: $key, in_house: false}' > "$RUNNER_TEMP/api-key.json"
+
+      # CFBundleVersion must grow with every upload, retries included: a UTC
+      # timestamp does, whatever workflow or attempt produced it.
+      - name: Archive
+        id: archive
+        env:
+          TEAM_ID: ${{ vars.APPLE_TEAM_ID }}
+          KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          build="$(date -u +%Y%m%d%H%M)"
+          echo "build=$build" >> "$GITHUB_OUTPUT"
+          xcodebuild archive \
+            -project "$PROJECT" \
+            -scheme Artiforce \
+            -configuration Release \
+            -destination 'generic/platform=macOS' \
+            -archivePath "$RUNNER_TEMP/Artiforce.xcarchive" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$RUNNER_TEMP/AuthKey.p8" \
+            -authenticationKeyID "$KEY_ID" \
+            -authenticationKeyIssuerID "$ISSUER_ID" \
+            DEVELOPMENT_TEAM="$TEAM_ID" \
+            MARKETING_VERSION="$VERSION" \
+            CURRENT_PROJECT_VERSION="$build"
+
+      - name: Export and upload to App Store Connect
+        env:
+          TEAM_ID: ${{ vars.APPLE_TEAM_ID }}
+          KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          plist="$RUNNER_TEMP/ExportOptions.plist"
+          plutil -create xml1 "$plist"
+          plutil -insert method -string app-store-connect "$plist"
+          plutil -insert destination -string upload "$plist"
+          plutil -insert signingStyle -string automatic "$plist"
+          plutil -insert teamID -string "$TEAM_ID" "$plist"
+          plutil -insert manageAppVersionAndBuildNumber -bool NO "$plist"
+          xcodebuild -exportArchive \
+            -archivePath "$RUNNER_TEMP/Artiforce.xcarchive" \
+            -exportOptionsPlist "$plist" \
+            -exportPath "$RUNNER_TEMP/export" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$RUNNER_TEMP/AuthKey.p8" \
+            -authenticationKeyID "$KEY_ID" \
+            -authenticationKeyIssuerID "$ISSUER_ID"
+
+      # The very first App Store version has no "What's New" and its listing
+      # is filled by hand: set the variable SAFARI_SUBMIT_FOR_REVIEW to false
+      # for that release, submit it from App Store Connect, then remove it.
+      - name: Submit the build for review
+        if: vars.SAFARI_SUBMIT_FOR_REVIEW != 'false'
+        env:
+          BUILD: ${{ steps.archive.outputs.build }}
+          RELEASE_NOTES: ${{ inputs.release_notes }}
+        run: |
+          set -euo pipefail
+          command -v fastlane > /dev/null || brew install fastlane
+          mkdir -p "$RUNNER_TEMP/metadata/fr-FR"
+          printf '%s\n' "$RELEASE_NOTES" > "$RUNNER_TEMP/metadata/fr-FR/release_notes.txt"
+          fastlane deliver \
+            --api_key_path "$RUNNER_TEMP/api-key.json" \
+            --app_identifier "$APP_BUNDLE_ID" \
+            --platform osx \
+            --app_version "$VERSION" \
+            --build_number "$BUILD" \
+            --skip_binary_upload true \
+            --skip_screenshots true \
+            --metadata_path "$RUNNER_TEMP/metadata" \
+            --submit_for_review true \
+            --automatic_release true \
+            --run_precheck_before_submit false \
+            --submission_information '{"export_compliance_uses_encryption": false, "add_id_info_uses_idfa": false}' \
+            --force true
+
+      - name: Remove the API key
+        if: always()
+        run: rm -f "$RUNNER_TEMP/AuthKey.p8" "$RUNNER_TEMP/api-key.json"

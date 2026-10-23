@@ -58,13 +58,13 @@ Requests are strict objects: an unknown key is `INVALID_REQUEST`.
 
 ## Commands
 
-| Command       | Params                                       | Result                                                                                                        |
-| ------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `hello`       | `{}`                                         | `{ extensionVersion, browser: "chrome" \| "edge" \| "firefox", protocols: number[], capabilities: string[] }` |
-| `getCart`     | `{}`                                         | `{ revision, items: BridgeCartItem[] }` (100 items max)                                                       |
-| `getImages`   | `{ itemIds: uuid[] }` (1 to 10)              | `{ images: { itemId, dataUrl \| null, width \| null, height \| null }[] }`, JPEG ≤ 1024 px                    |
-| `removeItems` | `{ items: { id, observedAt }[] }` (1 to 100) | `{ removed: uuid[], kept: uuid[], revision }`                                                                 |
-| `clearCart`   | `{ expectedRevision }`                       | `{ revision }`                                                                                                |
+| Command       | Params                                       | Result                                                                                                                    |
+| ------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `hello`       | `{}`                                         | `{ extensionVersion, browser: "chrome" \| "edge" \| "firefox" \| "safari", protocols: number[], capabilities: string[] }` |
+| `getCart`     | `{}`                                         | `{ revision, items: BridgeCartItem[] }` (100 items max)                                                                   |
+| `getImages`   | `{ itemIds: uuid[] }` (1 to 10)              | `{ images: { itemId, dataUrl \| null, width \| null, height \| null }[] }`, JPEG ≤ 1024 px                                |
+| `removeItems` | `{ items: { id, observedAt }[] }` (1 to 100) | `{ removed: uuid[], kept: uuid[], revision }`                                                                             |
+| `clearCart`   | `{ expectedRevision }`                       | `{ revision }`                                                                                                            |
 
 - `removeItems` removes an item only if its `observedAt` still equals the one
   sent: a product re-captured meanwhile (new price) stays in the selection and

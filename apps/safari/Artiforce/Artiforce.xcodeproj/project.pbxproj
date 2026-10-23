@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20230271308B704C00FF3286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20230270308B704C00FF3286 /* AppDelegate.swift */; };
+		20230275308B704C00FF3286 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 20230273308B704C00FF3286 /* Main.html */; };
+		20230277308B704C00FF3286 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 20230276308B704C00FF3286 /* Icon.png */; };
+		20230279308B704C00FF3286 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 20230278308B704C00FF3286 /* Style.css */; };
+		2023027B308B704C00FF3286 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 2023027A308B704C00FF3286 /* Script.js */; };
+		2023027D308B704C00FF3286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023027C308B704C00FF3286 /* ViewController.swift */; };
+		20230280308B704C00FF3286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2023027E308B704C00FF3286 /* Main.storyboard */; };
+		20230282308B704D00FF3286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20230281308B704D00FF3286 /* Assets.xcassets */; };
+		20230289308B704D00FF3286 /* Artiforce Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 20230288308B704D00FF3286 /* Artiforce Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2023028E308B704D00FF3286 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023028D308B704D00FF3286 /* SafariWebExtensionHandler.swift */; };
+		202302A0308B704D00FF3286 /* popup in Resources */ = {isa = PBXBuildFile; fileRef = 2023029A308B704D00FF3286 /* popup */; };
+		202302A1308B704D00FF3286 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 2023029B308B704D00FF3286 /* background.js */; };
+		202302A2308B704D00FF3286 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 2023029C308B704D00FF3286 /* images */; };
+		202302A3308B704D00FF3286 /* content in Resources */ = {isa = PBXBuildFile; fileRef = 2023029D308B704D00FF3286 /* content */; };
+		202302A4308B704D00FF3286 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 2023029E308B704D00FF3286 /* manifest.json */; };
+		202302A5308B704D00FF3286 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 2023029F308B704D00FF3286 /* _locales */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2023028A308B704D00FF3286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20230265308B704C00FF3286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20230287308B704D00FF3286;
+			remoteInfo = "Artiforce Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20230295308B704D00FF3286 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				20230289308B704D00FF3286 /* Artiforce Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2023026D308B704C00FF3286 /* Artiforce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artiforce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20230270308B704C00FF3286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20230274308B704C00FF3286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		20230276308B704C00FF3286 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		20230278308B704C00FF3286 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		2023027A308B704C00FF3286 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		2023027C308B704C00FF3286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2023027F308B704C00FF3286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20230281308B704D00FF3286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20230283308B704D00FF3286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20230288308B704D00FF3286 /* Artiforce Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Artiforce Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2023028D308B704D00FF3286 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		2023028F308B704D00FF3286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2023029A308B704D00FF3286 /* popup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = popup; path = "../../../browser/build/safari-production/popup"; sourceTree = "<group>"; };
+		2023029B308B704D00FF3286 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = "../../../browser/build/safari-production/background.js"; sourceTree = "<group>"; };
+		2023029C308B704D00FF3286 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = "../../../browser/build/safari-production/images"; sourceTree = "<group>"; };
+		2023029D308B704D00FF3286 /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content; path = "../../../browser/build/safari-production/content"; sourceTree = "<group>"; };
+		2023029E308B704D00FF3286 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = "../../../browser/build/safari-production/manifest.json"; sourceTree = "<group>"; };
+		2023029F308B704D00FF3286 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = "../../../browser/build/safari-production/_locales"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2023026A308B704C00FF3286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		20230285308B704D00FF3286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20230264308B704C00FF3286 = {
+			isa = PBXGroup;
+			children = (
+				2023026F308B704C00FF3286 /* Artiforce */,
+				2023028C308B704D00FF3286 /* Artiforce Extension */,
+				2023026E308B704C00FF3286 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2023026E308B704C00FF3286 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2023026D308B704C00FF3286 /* Artiforce.app */,
+				20230288308B704D00FF3286 /* Artiforce Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2023026F308B704C00FF3286 /* Artiforce */ = {
+			isa = PBXGroup;
+			children = (
+				20230270308B704C00FF3286 /* AppDelegate.swift */,
+				2023027C308B704C00FF3286 /* ViewController.swift */,
+				2023027E308B704C00FF3286 /* Main.storyboard */,
+				20230281308B704D00FF3286 /* Assets.xcassets */,
+				20230283308B704D00FF3286 /* Info.plist */,
+				20230272308B704C00FF3286 /* Resources */,
+			);
+			path = Artiforce;
+			sourceTree = "<group>";
+		};
+		20230272308B704C00FF3286 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20230273308B704C00FF3286 /* Main.html */,
+				20230276308B704C00FF3286 /* Icon.png */,
+				20230278308B704C00FF3286 /* Style.css */,
+				2023027A308B704C00FF3286 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2023028C308B704D00FF3286 /* Artiforce Extension */ = {
+			isa = PBXGroup;
+			children = (
+				20230299308B704D00FF3286 /* Resources */,
+				2023028D308B704D00FF3286 /* SafariWebExtensionHandler.swift */,
+				2023028F308B704D00FF3286 /* Info.plist */,
+			);
+			path = "Artiforce Extension";
+			sourceTree = "<group>";
+		};
+		20230299308B704D00FF3286 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2023029A308B704D00FF3286 /* popup */,
+				2023029B308B704D00FF3286 /* background.js */,
+				2023029C308B704D00FF3286 /* images */,
+				2023029D308B704D00FF3286 /* content */,
+				2023029E308B704D00FF3286 /* manifest.json */,
+				2023029F308B704D00FF3286 /* _locales */,
+			);
+			name = Resources;
+			path = "Artiforce Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2023026C308B704C00FF3286 /* Artiforce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20230296308B704D00FF3286 /* Build configuration list for PBXNativeTarget "Artiforce" */;
+			buildPhases = (
+				20230269308B704C00FF3286 /* Sources */,
+				2023026A308B704C00FF3286 /* Frameworks */,
+				2023026B308B704C00FF3286 /* Resources */,
+				20230295308B704D00FF3286 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2023028B308B704D00FF3286 /* PBXTargetDependency */,
+			);
+			name = Artiforce;
+			productName = Artiforce;
+			productReference = 2023026D308B704C00FF3286 /* Artiforce.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20230287308B704D00FF3286 /* Artiforce Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20230292308B704D00FF3286 /* Build configuration list for PBXNativeTarget "Artiforce Extension" */;
+			buildPhases = (
+				20230284308B704D00FF3286 /* Sources */,
+				20230285308B704D00FF3286 /* Frameworks */,
+				20230286308B704D00FF3286 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Artiforce Extension";
+			productName = "Artiforce Extension";
+			productReference = 20230288308B704D00FF3286 /* Artiforce Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20230265308B704C00FF3286 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					2023026C308B704C00FF3286 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					20230287308B704D00FF3286 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+				};
+			};
+			buildConfigurationList = 20230268308B704C00FF3286 /* Build configuration list for PBXProject "Artiforce" */;
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				fr,
+				Base,
+			);
+			mainGroup = 20230264308B704C00FF3286;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2023026E308B704C00FF3286 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2023026C308B704C00FF3286 /* Artiforce */,
+				20230287308B704D00FF3286 /* Artiforce Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2023026B308B704C00FF3286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				20230277308B704C00FF3286 /* Icon.png in Resources */,
+				20230280308B704C00FF3286 /* Main.storyboard in Resources */,
+				2023027B308B704C00FF3286 /* Script.js in Resources */,
+				20230275308B704C00FF3286 /* Main.html in Resources */,
+				20230282308B704D00FF3286 /* Assets.xcassets in Resources */,
+				20230279308B704C00FF3286 /* Style.css in Resources */,
+			);
+		};
+		20230286308B704D00FF3286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				202302A5308B704D00FF3286 /* _locales in Resources */,
+				202302A2308B704D00FF3286 /* images in Resources */,
+				202302A1308B704D00FF3286 /* background.js in Resources */,
+				202302A4308B704D00FF3286 /* manifest.json in Resources */,
+				202302A3308B704D00FF3286 /* content in Resources */,
+				202302A0308B704D00FF3286 /* popup in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20230269308B704C00FF3286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				2023027D308B704C00FF3286 /* ViewController.swift in Sources */,
+				20230271308B704C00FF3286 /* AppDelegate.swift in Sources */,
+			);
+		};
+		20230284308B704D00FF3286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				2023028E308B704D00FF3286 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2023028B308B704D00FF3286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20230287308B704D00FF3286 /* Artiforce Extension */;
+			targetProxy = 2023028A308B704D00FF3286 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20230273308B704C00FF3286 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20230274308B704C00FF3286 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		2023027E308B704C00FF3286 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2023027F308B704C00FF3286 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20230290308B704D00FF3286 /* Debug configuration for PBXProject "Artiforce" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20230291308B704D00FF3286 /* Release configuration for PBXProject "Artiforce" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		20230293308B704D00FF3286 /* Debug configuration for PBXNativeTarget "Artiforce Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Artiforce Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Artiforce Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.artiforce.Artiforce.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		20230294308B704D00FF3286 /* Release configuration for PBXNativeTarget "Artiforce Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Artiforce Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Artiforce Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.artiforce.Artiforce.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		20230297308B704D00FF3286 /* Debug configuration for PBXNativeTarget "Artiforce" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Artiforce/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Artiforce;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.artiforce.Artiforce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		20230298308B704D00FF3286 /* Release configuration for PBXNativeTarget "Artiforce" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Artiforce/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Artiforce;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.artiforce.Artiforce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20230268308B704C00FF3286 /* Build configuration list for PBXProject "Artiforce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20230290308B704D00FF3286 /* Debug configuration for PBXProject "Artiforce" */,
+				20230291308B704D00FF3286 /* Release configuration for PBXProject "Artiforce" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		20230292308B704D00FF3286 /* Build configuration list for PBXNativeTarget "Artiforce Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20230293308B704D00FF3286 /* Debug configuration for PBXNativeTarget "Artiforce Extension" */,
+				20230294308B704D00FF3286 /* Release configuration for PBXNativeTarget "Artiforce Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		20230296308B704D00FF3286 /* Build configuration list for PBXNativeTarget "Artiforce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20230297308B704D00FF3286 /* Debug configuration for PBXNativeTarget "Artiforce" */,
+				20230298308B704D00FF3286 /* Release configuration for PBXNativeTarget "Artiforce" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20230265308B704C00FF3286 /* Project object */;
+	validationLevel = 1;
+}

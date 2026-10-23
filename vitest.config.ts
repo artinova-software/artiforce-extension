@@ -24,7 +24,12 @@ export default defineConfig({
           name: "browser",
           root: "apps/browser",
           environment: "jsdom",
-          include: ["src/**/*.test.{ts,tsx}", "webpack/**/*.test.mjs", "test/**/*.test.ts"],
+          include: [
+            "src/**/*.test.{ts,tsx}",
+            "webpack/**/*.test.mjs",
+            "scripts/**/*.test.mjs",
+            "test/**/*.test.ts",
+          ],
           setupFiles: ["test/setup.ts"],
         },
         define: {

@@ -5,7 +5,7 @@ before editing; `CLAUDE.md` points here.
 
 ## What this is
 
-The Artiforce browser extension (Manifest V3; Chrome, Edge, Firefox). It injects an
+The Artiforce browser extension (Manifest V3; Chrome, Edge, Firefox, Safari). It injects an
 « Ajouter à Artiforce » button on supplier product pages, keeps the captured products
 in a local selection (popup, badge, 7-day expiry, 100 items max), and exposes that
 selection to the Artiforce web app through a `postMessage` bridge so the web app can
@@ -24,6 +24,7 @@ See [docs/architecture.md](docs/architecture.md).
 | `libs/suppliers` | `@artiforce-software/extension-suppliers` | Supplier registry, price parsing, product extraction, adapters. Pure TS + DOM. |
 | `libs/bridge`    | `@artiforce-software/extension-bridge`    | Bridge wire protocol (zod only). Copied into the web app.                      |
 | `apps/browser`   | `@artiforce-software/browser-extension`   | The extension: background, content scripts, popup.                             |
+| `apps/safari`    | (Xcode project)                           | macOS app wrapping the Safari build for the Mac App Store.                     |
 
 Inside `apps/browser/src`, each feature (`cart`, `capture`, `images`, `bridge`,
 `suppliers`) holds `background/`, `content/`, `popup/`, `services/`, `models/` as
@@ -85,9 +86,9 @@ logging, i18n, config, concurrency).
 pnpm install
 pnpm check            # format, lint, typecheck (DOM + WebWorker), unit tests
 pnpm dev:chrome       # watch build + instructions to load it
-pnpm build:chrome     # also build:edge, build:firefox
+pnpm build:chrome     # also build:edge, build:firefox, build:safari
 pnpm test:e2e         # Playwright, loads build/chrome-e2e
-pnpm dist             # three store zips + source archive
+pnpm dist             # four store zips + source archive (docs/release.md)
 pnpm supplier:new     # scaffold a supplier (docs/adding-a-supplier.md)
 pnpm fixture:trim     # trim a captured product page into a fixture
 ```

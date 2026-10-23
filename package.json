@@ -22,6 +22,7 @@
     "build:chrome": "pnpm --filter @artiforce-software/browser-extension run build:chrome",
     "build:edge": "pnpm --filter @artiforce-software/browser-extension run build:edge",
     "build:firefox": "pnpm --filter @artiforce-software/browser-extension run build:firefox",
+    "build:safari": "pnpm --filter @artiforce-software/browser-extension run build:safari",
     "dist": "pnpm --filter @artiforce-software/browser-extension run dist",
     "supplier:new": "node scripts/new-supplier.mjs",
     "fixture:trim": "node scripts/trim-fixture.mjs"

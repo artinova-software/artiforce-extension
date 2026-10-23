@@ -1,9 +1,11 @@
 name: Release
 
 # Manual, from main: bump the version (root package.json is the only source),
-# commit and tag it, build the three store packages and the AMO source
-# archive, and publish a GitHub release with them. Uploading to the Chrome Web
-# Store, Edge Add-ons and AMO stays manual (docs/release.md).
+# commit and tag it, build the four store packages (Chrome, Edge, Firefox,
+# Safari) and the AMO source archive, and publish a GitHub release with them.
+# Then publish.yml sends the packages to the stores listed in the PUBLISH_STORES
+# variable (default chrome,firefox,safari) once a reviewer approves the
+# `production` environment (docs/release.md).
 
 on:
   workflow_dispatch:
@@ -13,6 +15,10 @@ on:
         type: choice
         options: [patch, minor, major]
         default: patch
+      release_notes:
+        description: "What's new, in French (AMO and the App Store)"
+        type: string
+        default: Corrections et améliorations.
 
 concurrency:
   group: release
@@ -27,6 +33,8 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     if: github.ref == 'refs/heads/main'
+    outputs:
+      version: ${{ steps.version.outputs.version }}
     steps:
       - name: Check out
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -70,3 +78,15 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           VERSION: ${{ steps.version.outputs.version }}
         run: gh release create "v$VERSION" --verify-tag --generate-notes apps/browser/dist/*.zip
+
+  publish:
+    name: Publish
+    needs: release
+    uses: ./.github/workflows/publish.yml
+    permissions:
+      contents: read
+    with:
+      tag: v${{ needs.release.outputs.version }}
+      stores: ${{ vars.PUBLISH_STORES || 'chrome,firefox,safari' }}
+      release_notes: ${{ inputs.release_notes }}
+    secrets: inherit

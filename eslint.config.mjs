@@ -33,6 +33,9 @@ export default tseslint.config(
       "**/coverage/**",
       "**/test-results/**",
       "**/playwright-report/**",
+      // Xcode project from safari-web-extension-converter: its page script runs in
+      // the macOS app's WKWebView, outside the extension's rules.
+      "apps/safari/**",
     ],
   },
   js.configs.recommended,
