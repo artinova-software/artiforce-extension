@@ -6,11 +6,12 @@ import {
 } from "./suppliers.mjs";
 import { originMatchPattern } from "./app-config.mjs";
 
-const BROWSER_PREFIX = /^__(chrome|edge|firefox)__(.+)$/;
+const BROWSER_PREFIX = /^__(chrome|edge|firefox|safari)__(.+)$/;
 
 /**
- * Flattens `__chrome__key` / `__firefox__key` / `__edge__key` entries for one
- * browser, recursively. Edge falls back to the Chrome keys.
+ * Flattens `__chrome__key` / `__firefox__key` / `__edge__key` / `__safari__key`
+ * entries for one browser, recursively. Edge falls back to the Chrome keys;
+ * Safari has its own.
  */
 export function flattenBrowserKeys(value, browser) {
   if (Array.isArray(value)) {
@@ -68,7 +69,11 @@ export function buildManifest(template, { browser, target, version, appConfig, d
   // Disabled suppliers keep their hosts: re-enabling one later must not add a
   // permission, which would disable the extension until users accept it.
   manifest.host_permissions = hostPermissions(listedSuppliers({ includeTestOnly }));
-  if ((target === "development" || target === "e2e") && browser !== "firefox" && devKey) {
+  if (
+    (target === "development" || target === "e2e") &&
+    ["chrome", "edge"].includes(browser) &&
+    devKey
+  ) {
     manifest.key = devKey;
   }
   return manifest;

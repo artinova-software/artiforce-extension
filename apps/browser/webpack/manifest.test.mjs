@@ -35,7 +35,7 @@ function manifestFor(browser, target) {
 }
 
 describe("buildManifest", () => {
-  it.each(["chrome", "firefox"])("matches the %s production snapshot", (browser) => {
+  it.each(["chrome", "firefox", "safari"])("matches the %s production snapshot", (browser) => {
     expect(manifestFor(browser, "production")).toMatchSnapshot();
   });
 
@@ -51,6 +51,14 @@ describe("buildManifest", () => {
     expect(manifestFor("firefox", "production").browser_specific_settings.gecko.id).toBe(
       "browser-extension@artiforce.fr",
     );
+  });
+
+  it("gives Safari a service worker and no Chrome or Firefox keys", () => {
+    const manifest = manifestFor("safari", "production");
+    expect(manifest.background).toEqual({ service_worker: "background.js" });
+    expect(manifest.browser_specific_settings).toEqual({ safari: { strict_min_version: "17.0" } });
+    expect(manifest.minimum_chrome_version).toBeUndefined();
+    expect(manifestFor("safari", "development").key).toBeUndefined();
   });
 
   it("grants the hosts of disabled suppliers but injects nothing there", () => {
@@ -73,7 +81,7 @@ describe("buildManifest", () => {
   });
 
   it("keeps localhost, staging and test hosts out of production", () => {
-    for (const browser of ["chrome", "firefox"]) {
+    for (const browser of ["chrome", "firefox", "safari"]) {
       const text = JSON.stringify(manifestFor(browser, "production"));
       expect(text).not.toMatch(/localhost|staging|\.test\b/);
       expect(manifestFor(browser, "production").key).toBeUndefined();
@@ -118,11 +126,12 @@ describe("locales", () => {
 });
 
 describe("flattenBrowserKeys", () => {
-  it("prefers the exact browser, falls back from Edge to Chrome", () => {
-    const value = { a: 1, __chrome__b: "c", __edge__b: "e", __firefox__d: "f" };
+  it("prefers the exact browser, falls back from Edge to Chrome only", () => {
+    const value = { a: 1, __chrome__b: "c", __edge__b: "e", __firefox__d: "f", __safari__g: "s" };
     expect(flattenBrowserKeys(value, "chrome")).toEqual({ a: 1, b: "c" });
     expect(flattenBrowserKeys(value, "edge")).toEqual({ a: 1, b: "e" });
     expect(flattenBrowserKeys(value, "firefox")).toEqual({ a: 1, d: "f" });
+    expect(flattenBrowserKeys(value, "safari")).toEqual({ a: 1, g: "s" });
   });
 });
 

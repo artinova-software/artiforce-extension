@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 export const APP_DIR = join(dirname(fileURLToPath(import.meta.url)), "..");
 export const ROOT_DIR = join(APP_DIR, "..", "..");
 
-export const BROWSERS = ["chrome", "edge", "firefox"];
+export const BROWSERS = ["chrome", "edge", "firefox", "safari"];
 export const TARGETS = ["development", "staging", "production", "e2e"];
 
 /** `--env browser=chrome --env target=production` to a validated build description. */

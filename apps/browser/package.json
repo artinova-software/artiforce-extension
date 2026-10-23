@@ -2,7 +2,7 @@
   "name": "@artiforce-software/browser-extension",
   "version": "0.0.0",
   "private": true,
-  "description": "Artiforce browser extension (Chrome, Edge, Firefox; Manifest V3).",
+  "description": "Artiforce browser extension (Chrome, Edge, Firefox, Safari; Manifest V3).",
   "license": "AGPL-3.0-only",
   "type": "module",
   "scripts": {
@@ -10,6 +10,7 @@
     "build:chrome": "webpack --env browser=chrome --env target=production",
     "build:edge": "webpack --env browser=edge --env target=production",
     "build:firefox": "webpack --env browser=firefox --env target=production",
+    "build:safari": "webpack --env browser=safari --env target=production",
     "build:staging:chrome": "webpack --env browser=chrome --env target=staging",
     "build:watch:chrome": "webpack --watch --env browser=chrome --env target=development",
     "build:e2e": "webpack --env browser=chrome --env target=e2e",

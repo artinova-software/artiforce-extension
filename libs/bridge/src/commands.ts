@@ -7,7 +7,7 @@ export const BRIDGE_COMMANDS = {
     params: z.strictObject({}),
     result: z.object({
       extensionVersion: z.string().max(32),
-      browser: z.enum(["chrome", "edge", "firefox"]),
+      browser: z.enum(["chrome", "edge", "firefox", "safari"]),
       protocols: z.array(z.number().int().positive()).min(1),
       capabilities: z.array(z.string().max(32)),
     }),

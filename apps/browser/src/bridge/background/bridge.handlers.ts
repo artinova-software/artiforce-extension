@@ -16,7 +16,7 @@ export type BridgeHandlerDependencies = {
   cart: CartService;
   images: ImageService;
   version: string;
-  browser: "chrome" | "edge" | "firefox";
+  browser: "chrome" | "edge" | "firefox" | "safari";
 };
 
 export function registerBridgeHandlers(
