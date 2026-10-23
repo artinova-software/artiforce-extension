@@ -5,7 +5,7 @@
 - The default branch is `main`. Work on a branch named `feat/…`, `fix/…` or
   `chore/…`, and open a **draft** pull request early.
 - CI (`.github/workflows/ci.yml`) must be green: format, lint, typecheck, unit
-  tests, the three browser builds, `web-ext lint`, then the Playwright suite.
+  tests, the four browser builds, `web-ext lint`, then the Playwright suite.
 - There are no git hooks: CI enforces the rules.
 
 ## Commits

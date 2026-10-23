@@ -4,7 +4,7 @@ Add products from supplier websites (Leroy Merlin, Cedeo, Point.P, Rexel…) to 
 selection, then import that selection into an Artiforce quote or into the Library
 with « Importer la sélection ».
 
-- Manifest V3 for Chrome, Edge and Firefox.
+- Manifest V3 for Chrome, Edge, Firefox and Safari (macOS app in `apps/safari`).
 - The extension never talks to the Artiforce API: the web app reads the selection
   through a `postMessage` bridge and writes with its own session.
 - Rules and layout: [AGENTS.md](AGENTS.md). Architecture: [docs/architecture.md](docs/architecture.md).
@@ -46,7 +46,7 @@ pnpm build:chrome
 ```
 
 Outputs `apps/browser/build/<browser>-<target>/`. Targets: `development`,
-`staging`, `production`, `e2e` (`build:edge`, `build:firefox` also exist).
+`staging`, `production`, `e2e` (`build:edge`, `build:firefox`, `build:safari` also exist).
 
 ## Tests
 
@@ -78,7 +78,7 @@ pnpm dist
 ```
 
 Produces `apps/browser/dist/artiforce-<browser>-production-<version>.zip` for
-Chrome, Edge and Firefox plus a source archive for AMO. See
+Chrome, Edge, Firefox and Safari plus a source archive for AMO. See
 [docs/release.md](docs/release.md) and [docs/store-listing.md](docs/store-listing.md).
 
 ## License
